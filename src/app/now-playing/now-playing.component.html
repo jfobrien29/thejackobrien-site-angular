@@ -1,19 +1,20 @@
-<div id="content">
-  <div class="container">
-    <div class="about">
-      <h1 class="page-header"><img src="../../assets/bars.gif" height="20" width="20"> Jack Is Currently Listening To Music! <img src="../../assets/bars.gif" height="20" width="20"></h1>
-      <h2 class="song-tile">Song: {{songTitle}}</h2>
-      <h2 class="song-artists">Artist{{(numArtists == 1) ? '' : 's'}}: {{artists}}</h2>
-      <div>
-        <img class="album-art" src={{songAlbumImage}} height="300" width="300">
-      </div>
-      <div class="my-thoughts-container">
-        <p>My thoughts on this song: {{(review == '') ? 'No thoughts yet!' : review}}</p>
-      </div>
-      <div class="about-content">
-        <p>Listen to this song <a href={{externalLink}}>in your browser</a> or open it up <a href={{spotifyUri}}>directly in Spotify</a>!</p>
-        <p>Check out the original version of this page <a href="https://jacks-now-playing.herokuapp.com/">here</a> or view the code on <a href="https://github.com/jfobrien29/spotify-marathon-api">github</a>.</p>
-      </div>
+<div class="container">
+  <div class="about">
+    <h1 class="page-header"><img src="../../assets/bars.gif" height="20" width="20"> Jack Is Currently Listening To
+      Music! <img src="../../assets/bars.gif" height="20" width="20"></h1>
+    <h2 class="song-tile">Song: {{songTitle}}</h2>
+    <h2 class="song-artists">Artist{{(numArtists == 1) ? '' : 's'}}: {{artists}}</h2>
+    <div>
+      <img class="album-art" src={{songAlbumImage}} height="300" width="300">
+    </div>
+    <div class="my-thoughts-container">
+      <p>My thoughts on this song: {{(review == '') ? 'No thoughts yet!' : review}}</p>
+    </div>
+    <div class="about-content">
+      <p>Listen to this song <a href={{externalLink}}>in your browser</a> or open it up <a href={{spotifyUri}}>directly
+          in Spotify</a>!</p>
+      <p>Check out the original version of this page <a href="https://jacks-now-playing.herokuapp.com/">here</a> or
+        view the code on <a href="https://github.com/jfobrien29/spotify-marathon-api">github</a>.</p>
     </div>
   </div>
 </div>

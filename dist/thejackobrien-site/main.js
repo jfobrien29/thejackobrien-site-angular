@@ -219,7 +219,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"content\">\n  <div class=\"post-container\">\n    <div class=\"post\">\n      <div class=\"post-author\">\n        <img src=\"assets/me.png\">\n        <span>Jack OB</span>\n      </div>\n      <p class=\"post-date\">Today (but most likely not)</p>\n      <h3 class=\"post-title\">Maybe a blog someday</h3>\n      <div class=\"post-content\">\n        <p> Alright you got me, I don't have a blog. But check out my fundraising page for the New\n          York Maratahon run to benefit Leukemia Lymphoma Society\n          <a href=\"https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien\">here</a>.\n          I've been updating this 'blog' since I started my training in May!\n        </p>\n      </div>\n    </div>\n    <div class=\"post\">\n        <div class=\"post-author\">\n          <img src=\"assets/me.png\">\n          <span>Jack OB</span>\n        </div>\n        <p class=\"post-date\">Two days ago</p>\n        <h3 class=\"post-title\">Maybe another blog someday</h3>\n        <div class=\"post-content\">\n          <p> Just tryin her out.\n          </p>\n        </div>\n      </div>\n  </div>\n</div>"
+module.exports = "<div id=\"content\">\n  <div class=\"post-container\">\n    <div class=\"post\">\n      <div class=\"post-author\">\n        <img src=\"assets/me.png\">\n        <span>Jack OB</span>\n      </div>\n      <p class=\"post-date\">Post 1</p>\n      <h3 class=\"post-title\">Groovin Against Leukemia</h3>\n      <div class=\"post-content\">\n        <p> Alright you got me, I don't have a blog. But check out my fundraising page for the New\n          York Maratahon run to benefit Leukemia Lymphoma Society\n          <a href=\"https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien\">here</a>.\n          I've been updating this 'blog' since I started my training in May!\n        </p>\n      </div>\n    </div>\n    <div class=\"post\">\n      <div class=\"post-author\">\n        <img src=\"assets/me.png\">\n        <span>Jack OB</span>\n      </div>\n      <p class=\"post-date\">Post 2</p>\n      <h3 class=\"post-title\">Now Playing</h3>\n      <div class=\"post-content\">\n        <p> Now Playing App is now active! See what I'm listening to, my thoughts on it, and listen to it yourself!\n          Check it out in the toolbar above!\n        </p>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -282,7 +282,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <div *ngIf=\"messageService.messages.length\">\n  <h2>Messages</h2>\n  <button class=\"clear\"\n          (click)=\"messageService.clear()\">clear</button>\n  <div *ngFor='let message of messageService.messages'> {{message}} </div>\n</div> -->\n\n<div id=\"footer\">\n  <div class=\"container\">\n    <div class=\"column\">\n      <h4>My Links</h4>\n      <p>\n        <a href=\"https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien\">LLS NYC Marathon Fundraiser</a>\n        <br>\n        <a href=\"https://www.instagram.com/oldrelly/\">Old Relly Instagram</a>\n        <br>\n        <a href=\"https://www.linkedin.com/in/john-jack-o-brien-53bbaa105/\">LinkedIn</a>\n        <br>\n        <a href=\"mailto:thejackobrien29@gmail.com\">Email Me</a>\n      </p>\n    </div>\n    <div class=\"column\">\n      <h4>My Shameless Plug</h4>\n      <p>Hey there! I'm a fan of building things. Princeton Computer Science. NCAA Lacrosse. Guitar Player. IBM Blockchain Developer.\n      </p>\n    </div>\n  </div>\n</div>"
+module.exports = "<!-- <div *ngIf=\"messageService.messages.length\">\n  <h2>Messages</h2>\n  <button class=\"clear\"\n          (click)=\"messageService.clear()\">clear</button>\n  <div *ngFor='let message of messageService.messages'> {{message}} </div>\n</div> -->\n\n<div id=\"footer\">\n  <div class=\"container\">\n    <div class=\"column\">\n      <h4>A Few Great Links</h4>\n      <p>\n        <a href=\"https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien\">LLS NYC Marathon Fundraiser</a>\n        <br>\n        <a href=\"https://www.instagram.com/oldrelly/\">Old Relly Instagram</a>\n        <br>\n        <a href=\"https://github.com/jfobrien29/\">GitHub</a>\n        <br>\n        <a href=\"https://www.linkedin.com/in/john-jack-o-brien-53bbaa105/\">LinkedIn</a>\n        <br>\n        <a href=\"mailto:thejackobrien29@gmail.com\">Email Me</a>\n      </p>\n    </div>\n    <div class=\"column\">\n      <h4>My Shameless Plug</h4>\n      <p>I like to build things. Princeton Computer Science. NCAA Lacrosse. IBM Blockchain Developer.\n      </p>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -408,7 +408,7 @@ module.exports = "    /* LandingComponent's private CSS styles */"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"about\">\n      <div class=\"about-author\">\n        <img src=\"../../assets/me.png\">\n      </div>\n      <h1 class=\"about-title\">Who is Jack O'Brien?</h1>\n      <div class=\"about-content\">\n        <p>Hey! I'm a full stack developer for IBM Blockchain. I like solving complex problems and tackling big projects\n          inside and outside of my work life.</p>\n        <p>Check me out on\n          <a href=\"https://www.linkedin.com/in/john-jack-o-brien-53bbaa105/\">LinkedIn</a>.\n        </p>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"about\">\n      <div class=\"about-author\">\n        <img src=\"../../assets/me.png\">\n      </div>\n      <h1 class=\"about-title\">Who is Jack O'Brien?</h1>\n      <div class=\"about-content\">\n        <p>Hey! Welcome to my page! I'm a full stack developer for IBM Blockchain. I like solving complex problems and tackling big projects\n          inside and outside of my work life. This site is a constant work in progress, so take a look around!</p>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -463,7 +463,7 @@ var LandingComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".album-art{\n    padding: 10px;\n    background-color: black\n}\n\n.myThoughts{\n    background-color: #CC6600;\n    padding: 10px;\n}"
+module.exports = ".album-art{\n    padding: 10px;\n    background-color: black\n}\n\n/* .my-thoughts-container{\n    background-color: #CC6600;\n    padding: 10px;\n}\n\n.thoughts{\n    background-color: white;\n    padding: 10px;\n} */"
 
 /***/ }),
 
@@ -474,7 +474,7 @@ module.exports = ".album-art{\n    padding: 10px;\n    background-color: black\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"about\">\n      <h1 class=\"page-header\"><img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"> Jack Is Currently Listening To Music! <img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"></h1>\n      <h1 class=\"song-tile\">Song: {{songTitle}}</h1>\n      <h1 class=\"song-artists\">Artist{{(numArtists == 1) ? '' : 's'}}: {{artists}}</h1>\n      <div>\n        <img class=\"album-art\" src={{songAlbumImage}} height=\"300\" width=\"300\">\n      </div>\n      <div class=\"my-thoughts\">\n\n      </div>\n      <div class=\"about-content\">\n        <p>Listen to this song <a href={{externalLink}}>in your browser</a> or open it up <a href={{spotifyUri}}>directly in Spotify</a>!</p>\n        <p>Check out the original version of this site <a href=\"https://jacks-now-playing.herokuapp.com/\">here</a> or view the code on <a href=\"https://github.com/jfobrien29/spotify-marathon-api\">github</a>.</p>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"container\">\n  <div class=\"about\">\n    <h1 class=\"page-header\"><img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"> Jack Is Currently Listening To\n      Music! <img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"></h1>\n    <h2 class=\"song-tile\">Song: {{songTitle}}</h2>\n    <h2 class=\"song-artists\">Artist{{(numArtists == 1) ? '' : 's'}}: {{artists}}</h2>\n    <div>\n      <img class=\"album-art\" src={{songAlbumImage}} height=\"300\" width=\"300\">\n    </div>\n    <div class=\"my-thoughts-container\">\n      <p>My thoughts on this song: {{(review == '') ? 'No thoughts yet!' : review}}</p>\n    </div>\n    <div class=\"about-content\">\n      <p>Listen to this song <a href={{externalLink}}>in your browser</a> or open it up <a href={{spotifyUri}}>directly\n          in Spotify</a>!</p>\n      <p>Check out the original version of this page <a href=\"https://jacks-now-playing.herokuapp.com/\">here</a> or\n        view the code on <a href=\"https://github.com/jfobrien29/spotify-marathon-api\">github</a>.</p>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -517,6 +517,7 @@ var NowPlayingComponent = /** @class */ (function () {
                 return (index === 0) ? currArtist.name : artistString + ', ' + currArtist.name;
             }, '');
             _this.numArtists = _this.data.item.artists.length;
+            _this.review = _this.data.review;
         });
     };
     NowPlayingComponent = __decorate([
