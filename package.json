@@ -24,6 +24,8 @@
     "angular-in-memory-web-api": "^0.6.0",
     "core-js": "^2.5.4",
     "firebase": "^5.2.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },

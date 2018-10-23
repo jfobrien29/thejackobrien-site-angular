@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { BlogComponent } from './blog/blog.component';
 import { NowPlayingComponent } from './now-playing/now-playing.component';
+import { SpotifyService } from './spotify.service';
 
 @NgModule({
   imports: [
@@ -26,6 +27,9 @@ import { NowPlayingComponent } from './now-playing/now-playing.component';
     HeaderComponent,
     BlogComponent,
     NowPlayingComponent,
+  ],
+  providers: [
+    SpotifyService
   ],
   bootstrap: [AppComponent]
 })
