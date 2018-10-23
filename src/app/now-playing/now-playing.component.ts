@@ -14,6 +14,7 @@ export class NowPlayingComponent implements OnInit {
   spotifyUri: string;
   artists: string;
   numArtists: Number;
+  review: string;
 
   constructor(private spotifyService: SpotifyService) { }
 
@@ -27,8 +28,8 @@ export class NowPlayingComponent implements OnInit {
       this.artists = this.data.item.artists.reduce((artistString, currArtist, index) => {
         return (index === 0) ? currArtist.name : artistString + ', ' + currArtist.name;
       }, '');
-
       this.numArtists = this.data.item.artists.length;
+      this.review = this.data.review;
     });
   }
 }

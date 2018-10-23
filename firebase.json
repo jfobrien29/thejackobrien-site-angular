@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/thejackobrien-site",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

@@ -150,6 +150,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
 /* harmony import */ var _blog_blog_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blog/blog.component */ "./src/app/blog/blog.component.ts");
 /* harmony import */ var _now_playing_now_playing_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./now-playing/now-playing.component */ "./src/app/now-playing/now-playing.component.ts");
+/* harmony import */ var _spotify_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./spotify.service */ "./src/app/spotify.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -159,6 +160,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
  // <-- NgModel lives here
+
 
 
 
@@ -185,6 +187,9 @@ var AppModule = /** @class */ (function () {
                 _header_header_component__WEBPACK_IMPORTED_MODULE_8__["HeaderComponent"],
                 _blog_blog_component__WEBPACK_IMPORTED_MODULE_9__["BlogComponent"],
                 _now_playing_now_playing_component__WEBPACK_IMPORTED_MODULE_10__["NowPlayingComponent"],
+            ],
+            providers: [
+                _spotify_service__WEBPACK_IMPORTED_MODULE_11__["SpotifyService"]
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
         })
@@ -458,7 +463,7 @@ var LandingComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".album-art{\n    padding: 10px;\n    background-color: black\n}\n\n.myThoughts{\n    background-color: #CC6600;\n    padding: 10px;\n}"
 
 /***/ }),
 
@@ -469,7 +474,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"about\">\n      <div class=\"about-author\">\n        <img src=\"\">\n      </div>\n      <h1 class=\"about-title\"><img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"> Jack Is Currently Listening To\n        Music! {{songTitle}}<img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"></h1>\n      <div class=\"about-content\">\n        <p></p>\n        <p>Check out the original version of this site <a href=\"https://jacks-now-playing.herokuapp.com/\">here</a>.</p>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"about\">\n      <h1 class=\"page-header\"><img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"> Jack Is Currently Listening To Music! <img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"></h1>\n      <h1 class=\"song-tile\">Song: {{songTitle}}</h1>\n      <h1 class=\"song-artists\">Artist{{(numArtists == 1) ? '' : 's'}}: {{artists}}</h1>\n      <div>\n        <img class=\"album-art\" src={{songAlbumImage}} height=\"300\" width=\"300\">\n      </div>\n      <div class=\"my-thoughts\">\n\n      </div>\n      <div class=\"about-content\">\n        <p>Listen to this song <a href={{externalLink}}>in your browser</a> or open it up <a href={{spotifyUri}}>directly in Spotify</a>!</p>\n        <p>Check out the original version of this site <a href=\"https://jacks-now-playing.herokuapp.com/\">here</a> or view the code on <a href=\"https://github.com/jfobrien29/spotify-marathon-api\">github</a>.</p>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -484,6 +489,7 @@ module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div cl
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NowPlayingComponent", function() { return NowPlayingComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _spotify_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../spotify.service */ "./src/app/spotify.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -494,11 +500,24 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var NowPlayingComponent = /** @class */ (function () {
-    function NowPlayingComponent() {
+    function NowPlayingComponent(spotifyService) {
+        this.spotifyService = spotifyService;
     }
     NowPlayingComponent.prototype.ngOnInit = function () {
-        this.songTitle = 'Test Test';
+        var _this = this;
+        this.spotifyService.getSessionData().then(function (data) {
+            _this.data = data;
+            _this.songTitle = _this.data.item.name;
+            _this.songAlbumImage = _this.data.item.album.images[0].url;
+            _this.externalLink = _this.data.item.external_urls.spotify;
+            _this.spotifyUri = _this.data.item.uri;
+            _this.artists = _this.data.item.artists.reduce(function (artistString, currArtist, index) {
+                return (index === 0) ? currArtist.name : artistString + ', ' + currArtist.name;
+            }, '');
+            _this.numArtists = _this.data.item.artists.length;
+        });
     };
     NowPlayingComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -506,9 +525,53 @@ var NowPlayingComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./now-playing.component.html */ "./src/app/now-playing/now-playing.component.html"),
             styles: [__webpack_require__(/*! ./now-playing.component.css */ "./src/app/now-playing/now-playing.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_spotify_service__WEBPACK_IMPORTED_MODULE_1__["SpotifyService"]])
     ], NowPlayingComponent);
     return NowPlayingComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/spotify.service.ts":
+/*!************************************!*\
+  !*** ./src/app/spotify.service.ts ***!
+  \************************************/
+/*! exports provided: SpotifyService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SpotifyService", function() { return SpotifyService; });
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var SpotifyService = /** @class */ (function () {
+    function SpotifyService(http) {
+        this.http = http;
+        this.BASE_URI = _environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].spotify_url;
+    }
+    SpotifyService.prototype.getSessionData = function () {
+        return this.http.get(this.BASE_URI + "data").toPromise();
+    };
+    SpotifyService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Injectable"])(),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], SpotifyService);
+    return SpotifyService;
 }());
 
 
@@ -529,7 +592,8 @@ __webpack_require__.r(__webpack_exports__);
 // `ng build ---prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 var environment = {
-    production: false
+    production: false,
+    spotify_url: 'https://jacks-now-playing.herokuapp.com/'
 };
 /*
  * In development mode, to ignore zone related error stack frames such as
