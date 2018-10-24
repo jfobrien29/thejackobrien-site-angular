@@ -27,7 +27,7 @@ import { SpotifyService } from './spotify.service';
     LandingComponent,
     HeaderComponent,
     BlogComponent,
-    NowPlayingComponent,
+    NowPlayingComponent
   ],
   providers: [
     SpotifyService,

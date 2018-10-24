@@ -8,7 +8,9 @@ const routes: Routes = [
   // {path: '', redirectTo: '', pathMatch: 'full'},
   {path: '', component: LandingComponent},
   {path: 'nowPlaying', component: NowPlayingComponent},
-  {path: 'blog', component: BlogComponent}
+  {path: 'blog', component: BlogComponent},
+  {path: 'not-found', loadChildren: './not-found/not-found.module#NotFoundModule'},
+  {path: '**', redirectTo: 'not-found'}
 ];
 
 @NgModule({
