@@ -1,0 +1,34 @@
+#header {
+    background-color: #CC6600;
+    height: 100px;
+    line-height: 100px;
+}
+
+#header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+#header a:hover {
+    color: #222;
+}
+
+#header-title {
+    display: block;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#header-nav {
+    display: block;
+    float: right;
+    margin-top: 0;
+}
+
+#header-nav li {
+    display: inline;
+    padding-left: 20px;
+}
