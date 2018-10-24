@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { BlogComponent } from './blog/blog.component';
 import { NowPlayingComponent } from './now-playing/now-playing.component';
 import { SpotifyService } from './spotify.service';
+import { BlogPostComponent } from './blog-post/blog-post.component';
 
 @NgModule({
   imports: [
@@ -27,7 +28,8 @@ import { SpotifyService } from './spotify.service';
     LandingComponent,
     HeaderComponent,
     BlogComponent,
-    NowPlayingComponent
+    NowPlayingComponent,
+    BlogPostComponent
   ],
   providers: [
     SpotifyService,

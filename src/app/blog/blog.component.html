@@ -1,30 +1,13 @@
-<div id="content">
-  <div class="post-container">
+<div id="content" >
+  <div class="post-container" *ngFor="let post of posts">
     <div class="post">
-      <div class="post-author">
-        <img src="assets/me.png">
-        <span>Jack OB</span>
+      <div class="post-header">
+        <img src={{post.imgLocation}}>
+        <h3 class="post-title">{{post.title}}</h3>
+        <!-- <p class="post-date">{{post.date}}</p> -->
       </div>
-      <p class="post-date">Post 1</p>
-      <h3 class="post-title">Groovin Against Leukemia</h3>
       <div class="post-content">
-        <p> Alright you got me, I don't have a blog. But check out my fundraising page for the New
-          York Maratahon run to benefit Leukemia Lymphoma Society
-          <a href="https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien">here</a>.
-          I've been updating this 'blog' since I started my training in May!
-        </p>
-      </div>
-    </div>
-    <div class="post">
-      <div class="post-author">
-        <img src="assets/me.png">
-        <span class="author-name">Jack OB</span>
-      </div>
-      <p class="post-date">Post 2</p>
-      <h3 class="post-title">Now Playing</h3>
-      <div class="post-content">
-        <p> Now Playing App is now active! See what I'm listening to, my thoughts on it, and listen to it yourself!
-          Check it out in the toolbar above!
+        <p> {{post.content}}
         </p>
       </div>
     </div>
