@@ -1,13 +1,17 @@
-.album-art{
-    padding: 10px;
-    background-color: black
-}
-
-.about{
+.now-playing{
     max-width: 800px;
     margin: 0 auto;
     padding: 40px 0;
-    text-align: center;
+    text-align: center
+}
+
+.loader img{
+    max-width: 400px;
+}
+
+.album-art{
+    padding: 10px;
+    background-color: black
 }
 
 /* .my-thoughts-container{
