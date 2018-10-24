@@ -11,7 +11,8 @@
 
 .album-art{
     padding: 10px;
-    background-color: black
+    background-color: #333;
+    border-radius: 3%;
 }
 
 /* .my-thoughts-container{

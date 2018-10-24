@@ -15,7 +15,7 @@ export class NowPlayingComponent implements OnInit {
   externalLink: string;
   spotifyUri: string;
   artists: string;
-  numArtists: Number;
+  hasMultipleArtists: boolean;
   review: string;
 
   constructor(private spotifyService: SpotifyService) { }
@@ -23,9 +23,9 @@ export class NowPlayingComponent implements OnInit {
   ngOnInit() {
     this.isLoading = true;
     this.spotifyService.getSessionData().then(data => {
-      if (data !== 'Not Playing') {
-        this.isPlaying = true;
-        this.data = data;
+      this.data = data;
+      this.isPlaying = this.data.isPlaying;
+      if (this.isPlaying) {
         this.songTitle = this.data.item.name;
         this.songAlbumImage = this.data.item.album.images[0].url;
         this.externalLink = this.data.item.external_urls.spotify;
@@ -33,12 +33,10 @@ export class NowPlayingComponent implements OnInit {
         this.artists = this.data.item.artists.reduce((artistString, currArtist, index) => {
           return (index === 0) ? currArtist.name : artistString + ', ' + currArtist.name;
         }, '');
-        this.numArtists = this.data.item.artists.length;
+        this.hasMultipleArtists = this.data.item.artists.length > 1;
         this.review = this.data.review;
-      } else {
-        this.isPlaying = false;
       }
-      setTimeout(() => {this.isLoading = false; }, 1000);
+      setTimeout(() => {this.isLoading = false; }, 1500);
     });
   }
 }
