@@ -5,21 +5,33 @@
   !*** ./src/$$_lazy_route_resource lazy namespace object ***!
   \**********************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-function webpackEmptyAsyncContext(req) {
-	// Here Promise.resolve().then() is used instead of new Promise() to prevent
-	// uncaught exception popping up in devtools
-	return Promise.resolve().then(function() {
-		var e = new Error('Cannot find module "' + req + '".');
-		e.code = 'MODULE_NOT_FOUND';
-		throw e;
+var map = {
+	"./not-found/not-found.module": [
+		"./src/app/not-found/not-found.module.ts",
+		"not-found-not-found-module"
+	]
+};
+function webpackAsyncContext(req) {
+	var ids = map[req];
+	if(!ids) {
+		return Promise.resolve().then(function() {
+			var e = new Error('Cannot find module "' + req + '".');
+			e.code = 'MODULE_NOT_FOUND';
+			throw e;
+		});
+	}
+	return __webpack_require__.e(ids[1]).then(function() {
+		var module = __webpack_require__(ids[0]);
+		return module;
 	});
 }
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
+webpackAsyncContext.keys = function webpackAsyncContextKeys() {
+	return Object.keys(map);
+};
+webpackAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
+module.exports = webpackAsyncContext;
 
 /***/ }),
 
@@ -53,7 +65,9 @@ var routes = [
     // {path: '', redirectTo: '', pathMatch: 'full'},
     { path: '', component: _landing_landing_component__WEBPACK_IMPORTED_MODULE_2__["LandingComponent"] },
     { path: 'nowPlaying', component: _now_playing_now_playing_component__WEBPACK_IMPORTED_MODULE_4__["NowPlayingComponent"] },
-    { path: 'blog', component: _blog_blog_component__WEBPACK_IMPORTED_MODULE_3__["BlogComponent"] }
+    { path: 'blog', component: _blog_blog_component__WEBPACK_IMPORTED_MODULE_3__["BlogComponent"] },
+    { path: 'not-found', loadChildren: './not-found/not-found.module#NotFoundModule' },
+    { path: '**', redirectTo: 'not-found' }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -143,14 +157,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
-/* harmony import */ var _landing_landing_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./landing/landing.component */ "./src/app/landing/landing.component.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
-/* harmony import */ var _blog_blog_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blog/blog.component */ "./src/app/blog/blog.component.ts");
-/* harmony import */ var _now_playing_now_playing_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./now-playing/now-playing.component */ "./src/app/now-playing/now-playing.component.ts");
-/* harmony import */ var _spotify_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./spotify.service */ "./src/app/spotify.service.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
+/* harmony import */ var _landing_landing_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./landing/landing.component */ "./src/app/landing/landing.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
+/* harmony import */ var _blog_blog_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blog/blog.component */ "./src/app/blog/blog.component.ts");
+/* harmony import */ var _now_playing_now_playing_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./now-playing/now-playing.component */ "./src/app/now-playing/now-playing.component.ts");
+/* harmony import */ var _spotify_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./spotify.service */ "./src/app/spotify.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -169,6 +184,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -177,21 +193,22 @@ var AppModule = /** @class */ (function () {
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
             ],
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-                _footer_footer_component__WEBPACK_IMPORTED_MODULE_5__["FooterComponent"],
-                _landing_landing_component__WEBPACK_IMPORTED_MODULE_6__["LandingComponent"],
-                _header_header_component__WEBPACK_IMPORTED_MODULE_8__["HeaderComponent"],
-                _blog_blog_component__WEBPACK_IMPORTED_MODULE_9__["BlogComponent"],
-                _now_playing_now_playing_component__WEBPACK_IMPORTED_MODULE_10__["NowPlayingComponent"],
+                _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
+                _footer_footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"],
+                _landing_landing_component__WEBPACK_IMPORTED_MODULE_7__["LandingComponent"],
+                _header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"],
+                _blog_blog_component__WEBPACK_IMPORTED_MODULE_10__["BlogComponent"],
+                _now_playing_now_playing_component__WEBPACK_IMPORTED_MODULE_11__["NowPlayingComponent"]
             ],
             providers: [
-                _spotify_service__WEBPACK_IMPORTED_MODULE_11__["SpotifyService"]
+                _spotify_service__WEBPACK_IMPORTED_MODULE_12__["SpotifyService"],
+                { provide: _angular_common__WEBPACK_IMPORTED_MODULE_4__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_4__["HashLocationStrategy"] }
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -397,7 +414,7 @@ var HeaderComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "    /* LandingComponent's private CSS styles */"
+module.exports = "    /* LandingComponent's private CSS styles */\n    "
 
 /***/ }),
 
