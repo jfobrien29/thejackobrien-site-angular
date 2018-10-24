@@ -3,6 +3,13 @@
     background-color: black
 }
 
+.about{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
 /* .my-thoughts-container{
     background-color: #CC6600;
     padding: 10px;

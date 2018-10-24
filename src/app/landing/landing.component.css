@@ -1,2 +1,12 @@
     /* LandingComponent's private CSS styles */
     
+    .about{
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 0;
+        text-align: center
+    }
+
+    .about-author img {
+        border-radius: 50%;
+    }

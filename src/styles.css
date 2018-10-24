@@ -10,7 +10,7 @@
     }
     
     .container {
-        max-width: 1000px;
+        max-width: 900px;
         margin: 0 auto;
     }
     
@@ -29,30 +29,11 @@
         color: #1abc9c;
     }
     
-    .post, .about{
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 40px 0;
-    }
-    
-    .about-author img {
-        border-radius: 50%;
-    }
-    
     h1 h2 h3 h4 {
         color: #333;
     }
     
     p {
         line-height: 1.5;
-    }
-    
-    .about {
-        text-align: center
-    }
-    
-    .liquidFillGaugeText { 
-        font-family: 'Montserrat', sans-serif; 
-        font-weight: bold; 
     }
     
