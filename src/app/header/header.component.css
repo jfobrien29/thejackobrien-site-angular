@@ -20,6 +20,7 @@
     float: left;
     font-size: 25px;
     font-weight: bold;
+    padding-left: 10px;
 }
 
 #header-nav {
@@ -31,4 +32,52 @@
 #header-nav li {
     display: inline;
     padding-left: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.lastElm {
+    padding-right: 10px;
+}
+
+@media (max-width:680px){
+    #header {
+        background-color: #CC6600;
+        height: 200px;
+        line-height: 60px;
+    }
+
+    #header-title {
+        display: block;
+        float: none;
+        font-size: 25px;
+        font-weight: bold;
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+
+    #header a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        text-align: center;
+    }
+
+    #header-nav {
+        display: block;
+        float: none;
+        margin-top: 0;
+        line-height: 40px;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    #header-nav li {
+        display: block;
+        padding-left: 20px;
+    }
 }

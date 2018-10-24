@@ -12,3 +12,11 @@
 #footer p {
     color: white;
 }
+
+.column {
+    min-width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 10px;
+}
