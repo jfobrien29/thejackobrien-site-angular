@@ -103,7 +103,7 @@ module.exports = "/* AppComponent's private CSS styles */"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <nav>\n    <a routerLink=\"\">Dashboard</a>\n</nav> -->\n<app-header></app-header>\n<router-outlet></router-outlet>\n<app-footer></app-footer>"
+module.exports = "<app-header></app-header>\n<router-outlet></router-outlet>\n<app-footer></app-footer>"
 
 /***/ }),
 
@@ -225,7 +225,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n.post {\n    max-width: 800px;\n    margin: 0 auto;\n    padding: 40px 0;\n}\n\n.post-author img {\n    width: 50px;\n    height: 50px;\n    vertical-align: middle;\n    border-radius: 50%;\n}\n\n.post-author span {\n    margin-left: 16px;\n}\n\n.post-container:nth-child(even) {\n    background-color: #f2f2f2;\n}\n\n.post-date {\n    color: #D2D2D2;\n    font-size: 14px;\n    font-weight: bold;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n}"
 
 /***/ }),
 
@@ -288,7 +288,7 @@ var BlogComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "#footer {\n    background-color: #2f2f2f;\n    padding: 30px 0;\n}\n\n#footer h4 {\n    color: white;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n}\n\n#footer p {\n    color: white;\n}"
 
 /***/ }),
 
@@ -299,7 +299,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <div *ngIf=\"messageService.messages.length\">\n  <h2>Messages</h2>\n  <button class=\"clear\"\n          (click)=\"messageService.clear()\">clear</button>\n  <div *ngFor='let message of messageService.messages'> {{message}} </div>\n</div> -->\n\n<div id=\"footer\">\n  <div class=\"container\">\n    <div class=\"column\">\n      <h4>A Few Great Links</h4>\n      <p>\n        <a href=\"https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien\">LLS NYC Marathon Fundraiser</a>\n        <br>\n        <a href=\"https://www.instagram.com/oldrelly/\">Old Relly Instagram</a>\n        <br>\n        <a href=\"https://github.com/jfobrien29/\">GitHub</a>\n        <br>\n        <a href=\"https://www.linkedin.com/in/john-jack-o-brien-53bbaa105/\">LinkedIn</a>\n        <br>\n        <a href=\"mailto:thejackobrien29@gmail.com\">Email Me</a>\n      </p>\n    </div>\n    <div class=\"column\">\n      <h4>My Shameless Plug</h4>\n      <p>I like to build things. Princeton Computer Science. NCAA Lacrosse. IBM Blockchain Developer.\n      </p>\n    </div>\n  </div>\n</div>"
+module.exports = "<div id=\"footer\">\n  <div class=\"container\">\n    <div class=\"column\">\n      <h4>A Few Great Links</h4>\n      <p>\n        <a href=\"https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien\">LLS NYC Marathon Fundraiser</a>\n        <br>\n        <a href=\"https://www.instagram.com/oldrelly/\">Old Relly Instagram</a>\n        <br>\n        <a href=\"https://github.com/jfobrien29/\">GitHub</a>\n        <br>\n        <a href=\"https://www.linkedin.com/in/john-jack-o-brien-53bbaa105/\">LinkedIn</a>\n        <br>\n        <a href=\"mailto:thejackobrien29@gmail.com\">Email Me</a>\n      </p>\n    </div>\n    \n    <div class=\"column\">\n      <h4>My Shameless Plug</h4>\n      <p>I'm a builder. Princeton Engineering. Computer Science. <br>\n        NCAA Lacrosse. Old Relly. IBM Blockchain.\n      </p>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -351,7 +351,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "#header {\n    background-color: #CC6600;\n    height: 100px;\n    line-height: 100px;\n}\n\n#header a {\n    color: white;\n    text-decoration: none;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n}\n\n#header a:hover {\n    color: #222;\n}\n\n#header-title {\n    display: block;\n    float: left;\n    font-size: 25px;\n    font-weight: bold;\n}\n\n#header-nav {\n    display: block;\n    float: right;\n    margin-top: 0;\n}\n\n#header-nav li {\n    display: inline;\n    padding-left: 20px;\n}"
 
 /***/ }),
 
@@ -414,7 +414,7 @@ var HeaderComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "    /* LandingComponent's private CSS styles */\n    "
+module.exports = "    /* LandingComponent's private CSS styles */\n    \n    .about{\n        max-width: 800px;\n        margin: 0 auto;\n        padding: 40px 0;\n        text-align: center\n    }\n    \n    .about-author img {\n        border-radius: 50%;\n    }"
 
 /***/ }),
 
@@ -425,7 +425,7 @@ module.exports = "    /* LandingComponent's private CSS styles */\n    "
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"about\">\n      <div class=\"about-author\">\n        <img src=\"../../assets/me.png\">\n      </div>\n      <h1 class=\"about-title\">Who is Jack O'Brien?</h1>\n      <div class=\"about-content\">\n        <p>Hey! Welcome to my page! I'm a full stack developer for IBM Blockchain. I like solving complex problems and tackling big projects\n          inside and outside of my work life. This site is a constant work in progress, so take a look around!</p>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"about\">\n      <div class=\"about-author\">\n        <img src=\"../../assets/me.png\">\n      </div>\n      <h1 class=\"about-title\">Who is Jack O'Brien?</h1>\n      <div class=\"about-content\">\n        <p>Hey! There are many \"Jack O'Briens\" in the world, but I am <em><b>the</b></em> one you're looking for!\n          <br>\n          <br>\n          I'm currently a full stack developer for IBM Blockchain. I like solving complex\n          problems and tackling big projects in and out of my work life. \n          This site is a constant work in\n          progress with great links, info, and projects, so take a look around!</p>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -480,7 +480,7 @@ var LandingComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".album-art{\n    padding: 10px;\n    background-color: black\n}\n\n/* .my-thoughts-container{\n    background-color: #CC6600;\n    padding: 10px;\n}\n\n.thoughts{\n    background-color: white;\n    padding: 10px;\n} */"
+module.exports = ".now-playing{\n    max-width: 800px;\n    margin: 0 auto;\n    padding: 40px 0;\n    text-align: center\n}\n\n.loader img{\n    max-width: 400px;\n}\n\n.album-art{\n    padding: 10px;\n    background-color: black\n}\n\n/* .my-thoughts-container{\n    background-color: #CC6600;\n    padding: 10px;\n}\n\n.thoughts{\n    background-color: white;\n    padding: 10px;\n} */"
 
 /***/ }),
 
@@ -491,7 +491,7 @@ module.exports = ".album-art{\n    padding: 10px;\n    background-color: black\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"about\">\n    <h1 class=\"page-header\"><img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"> Jack Is Currently Listening To\n      Music! <img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"></h1>\n    <h2 class=\"song-tile\">Song: {{songTitle}}</h2>\n    <h2 class=\"song-artists\">Artist{{(numArtists == 1) ? '' : 's'}}: {{artists}}</h2>\n    <div>\n      <img class=\"album-art\" src={{songAlbumImage}} height=\"300\" width=\"300\">\n    </div>\n    <div class=\"my-thoughts-container\">\n      <p>My thoughts on this song: {{(review == '') ? 'No thoughts yet!' : review}}</p>\n    </div>\n    <div class=\"about-content\">\n      <p>Listen to this song <a href={{externalLink}}>in your browser</a> or open it up <a href={{spotifyUri}}>directly\n          in Spotify</a>!</p>\n      <p>Check out the original version of this page <a href=\"https://jacks-now-playing.herokuapp.com/\">here</a> or\n        view the code on <a href=\"https://github.com/jfobrien29/spotify-marathon-api\">github</a>.</p>\n    </div>\n  </div>\n</div>"
+module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"now-playing\">\n\n      <div *ngIf=\"isLoading\">\n        <div class=\"loader\"><img src=\"https://i.redd.it/ounq1mw5kdxy.gif\"></div>\n      </div>\n\n      <div *ngIf=\"!isLoading\">\n\n        <div *ngIf=\"isPlaying\">\n          <h1 class=\"page-header\"><img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"> Jack Is Listening To\n            Music! <img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"></h1>\n          <h2 class=\"song-tile\">Song: {{songTitle}}</h2>\n          <h2 class=\"song-artists\">Artist{{(numArtists == 1) ? '' : 's'}}: {{artists}}</h2>\n          <div>\n            <img class=\"album-art\" src={{songAlbumImage}} height=\"300\" width=\"300\">\n          </div>\n          <div class=\"my-thoughts-container\">\n            <p>My thoughts on this song: {{(review == '') ? 'No thoughts recorded yet!' : review}}</p>\n          </div>\n          <div class=\"about-content\">\n            <p>Listen to this song <a href={{externalLink}}>in your browser</a> or open it up <a href={{spotifyUri}}>directly\n                in Spotify</a>!</p>\n          </div>\n        </div>\n\n        <div *ngIf=\"!isPlaying\">\n          <h1 class=\"page-header\"> Jack Is Not Listening To Music.</h1>\n          <p>Check back later for some jams!</p>\n        </div>\n\n        <div>\n          <p>I wanted to create a way to share my music at all times, especially during the 2018 New York Marathon.\n            Check out the original version of this page <a href=\"https://jacks-now-playing.herokuapp.com/\">here</a> or\n            view the code on <a href=\"https://github.com/jfobrien29/spotify-marathon-api\">github</a>.</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -524,17 +524,25 @@ var NowPlayingComponent = /** @class */ (function () {
     }
     NowPlayingComponent.prototype.ngOnInit = function () {
         var _this = this;
+        this.isLoading = true;
         this.spotifyService.getSessionData().then(function (data) {
-            _this.data = data;
-            _this.songTitle = _this.data.item.name;
-            _this.songAlbumImage = _this.data.item.album.images[0].url;
-            _this.externalLink = _this.data.item.external_urls.spotify;
-            _this.spotifyUri = _this.data.item.uri;
-            _this.artists = _this.data.item.artists.reduce(function (artistString, currArtist, index) {
-                return (index === 0) ? currArtist.name : artistString + ', ' + currArtist.name;
-            }, '');
-            _this.numArtists = _this.data.item.artists.length;
-            _this.review = _this.data.review;
+            if (data !== 'Not Playing') {
+                _this.isPlaying = true;
+                _this.data = data;
+                _this.songTitle = _this.data.item.name;
+                _this.songAlbumImage = _this.data.item.album.images[0].url;
+                _this.externalLink = _this.data.item.external_urls.spotify;
+                _this.spotifyUri = _this.data.item.uri;
+                _this.artists = _this.data.item.artists.reduce(function (artistString, currArtist, index) {
+                    return (index === 0) ? currArtist.name : artistString + ', ' + currArtist.name;
+                }, '');
+                _this.numArtists = _this.data.item.artists.length;
+                _this.review = _this.data.review;
+            }
+            else {
+                _this.isPlaying = false;
+            }
+            setTimeout(function () { _this.isLoading = false; }, 1000);
         });
     };
     NowPlayingComponent = __decorate([

@@ -1,0 +1,64 @@
+[debug] [2018-10-24T04:41:53.139Z] ----------------------------------------------------------------------
+[debug] [2018-10-24T04:41:53.141Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-10-24T04:41:53.142Z] CLI Version:   5.1.1
+[debug] [2018-10-24T04:41:53.142Z] Platform:      darwin
+[debug] [2018-10-24T04:41:53.142Z] Node Version:  v8.9.4
+[debug] [2018-10-24T04:41:53.142Z] Time:          Wed Oct 24 2018 00:41:53 GMT-0400 (EDT)
+[debug] [2018-10-24T04:41:53.143Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-24T04:41:53.157Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-24T04:41:53.158Z] > authorizing via signed-in user
+[debug] [2018-10-24T04:41:53.158Z] [iam] checking project thejackobriensite for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2018-10-24T04:41:53.162Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-10-24T04:41:53.162Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-10-24T04:41:53.404Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-24T04:41:53.433Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/thejackobriensite:testIamPermissions  
+
+[debug] [2018-10-24T04:41:57.366Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-24T04:41:57.368Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/thejackobriensite  
+ 
+[debug] [2018-10-24T04:41:59.619Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'thejackobriensite'...
+[info] 
+[info] i  deploying hosting
+[debug] [2018-10-24T04:41:59.623Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/thejackobriensite/versions  
+
+[debug] [2018-10-24T04:42:02.898Z] <<< HTTP RESPONSE 200
+[info] i  hosting[thejackobriensite]: beginning deploy...
+[info] i  hosting[thejackobriensite]: found 18 files in dist/thejackobrien-site
+[debug] [2018-10-24T04:42:02.922Z] [hosting] hash cache [ZGlzdC90aGVqYWNrb2JyaWVuLXNpdGU] stored for 18 files
+[debug] [2018-10-24T04:42:02.922Z] [hosting][hash queue][FINAL]
+[debug] [2018-10-24T04:42:02.922Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/thejackobriensite/versions/25ed6d079b43d289:populateFiles  
+ <request body omitted>
+[debug] [2018-10-24T04:42:03.817Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-24T04:42:03.818Z] [hosting][populate queue][FINAL]
+[debug] [2018-10-24T04:42:03.818Z] [hosting] uploads queued: 0
+[debug] [2018-10-24T04:42:03.818Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[thejackobriensite]: file upload complete
+[debug] [2018-10-24T04:42:03.820Z] [hosting] deploy completed after 920ms
+[debug] [2018-10-24T04:42:03.821Z] [
+  {
+    "config": {
+      "public": "dist/thejackobrien-site",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "thejackobriensite"
+    },
+    "site": "thejackobriensite",
+    "version": "sites/thejackobriensite/versions/25ed6d079b43d289"
+  }
+]
+[info] i  hosting[thejackobriensite]: finalizing version...
+[debug] [2018-10-24T04:42:03.822Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/thejackobriensite/versions/25ed6d079b43d289?updateMask=status  
+
+[debug] [2018-10-24T04:42:04.431Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-24T04:42:04.432Z] [hosting] finalized version for thejackobriensite:
+[info] ✔  hosting[thejackobriensite]: version finalized
+[info] i  hosting[thejackobriensite]: releasing new version...
+[debug] [2018-10-24T04:42:04.432Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/thejackobriensite/releases?version_name=sites/thejackobriensite/versions/25ed6d079b43d289  
+
