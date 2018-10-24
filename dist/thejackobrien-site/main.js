@@ -225,7 +225,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n.post {\n    max-width: 800px;\n    margin: 0 auto;\n    padding: 40px 0;\n}\n\n.post-author img {\n    width: 50px;\n    height: 50px;\n    vertical-align: middle;\n    border-radius: 50%;\n}\n\n.post-author span {\n    margin-left: 16px;\n}\n\n.post-container:nth-child(even) {\n    background-color: #f2f2f2;\n}\n\n.post-date {\n    color: #D2D2D2;\n    font-size: 14px;\n    font-weight: bold;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n}\n\n.post-container {\n    padding-left: 10px;\n    padding-right: 10px;\n}\n\n.post-content p {\n    justify-content: end;\n}\n\n.author-name {\n    -webkit-text-emphasis: bold;\n            text-emphasis: bold;\n}"
+module.exports = "\n.post {\n    max-width: 800px;\n    margin: 0 auto;\n    padding: 40px 0;\n}\n\n.post-header img {\n    width: 50px;\n    height: 50px;\n    vertical-align: middle;\n    border-radius: 50%;\n}\n\n.post-header .post-title {\n    display: inline;\n    padding-left: 10px\n}\n\n.post-container:nth-child(even) {\n    background-color: #f2f2f2;\n}\n\n.post-date {\n    display: inline;\n    color: #D2D2D2;\n    font-size: 14px;\n    font-weight: bold;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n    padding-left: 10px;\n}\n\n.post-container {\n    padding-left: 10px;\n    padding-right: 10px;\n}\n\n.post-content p {\n    justify-content: end;\n}\n\n.author-name {\n    -webkit-text-emphasis: bold;\n            text-emphasis: bold;\n}"
 
 /***/ }),
 
@@ -236,7 +236,7 @@ module.exports = "\n.post {\n    max-width: 800px;\n    margin: 0 auto;\n    pad
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"content\">\n  <div class=\"post-container\">\n    <div class=\"post\">\n      <div class=\"post-author\">\n        <img src=\"assets/me.png\">\n        <span>Jack OB</span>\n      </div>\n      <p class=\"post-date\">Post 1</p>\n      <h3 class=\"post-title\">Groovin Against Leukemia</h3>\n      <div class=\"post-content\">\n        <p> Alright you got me, I don't have a blog. But check out my fundraising page for the New\n          York Maratahon run to benefit Leukemia Lymphoma Society\n          <a href=\"https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien\">here</a>.\n          I've been updating this 'blog' since I started my training in May!\n        </p>\n      </div>\n    </div>\n    <div class=\"post\">\n      <div class=\"post-author\">\n        <img src=\"assets/me.png\">\n        <span class=\"author-name\">Jack OB</span>\n      </div>\n      <p class=\"post-date\">Post 2</p>\n      <h3 class=\"post-title\">Now Playing</h3>\n      <div class=\"post-content\">\n        <p> Now Playing App is now active! See what I'm listening to, my thoughts on it, and listen to it yourself!\n          Check it out in the toolbar above!\n        </p>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div id=\"content\" >\n  <div class=\"post-container\" *ngFor=\"let post of posts\">\n    <div class=\"post\">\n      <div class=\"post-header\">\n        <img src={{post.imgLocation}}>\n        <h3 class=\"post-title\">{{post.title}}</h3>\n        <!-- <p class=\"post-date\">{{post.date}}</p> -->\n      </div>\n      <div class=\"post-content\">\n        <p> {{post.content}}\n        </p>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -251,6 +251,7 @@ module.exports = "<div id=\"content\">\n  <div class=\"post-container\">\n    <d
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlogComponent", function() { return BlogComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _blogposts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blogposts */ "./src/app/blog/blogposts.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -261,10 +262,12 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var BlogComponent = /** @class */ (function () {
     function BlogComponent() {
     }
     BlogComponent.prototype.ngOnInit = function () {
+        this.posts = _blogposts__WEBPACK_IMPORTED_MODULE_1__["posts"];
     };
     BlogComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -276,6 +279,65 @@ var BlogComponent = /** @class */ (function () {
     ], BlogComponent);
     return BlogComponent;
 }());
+
+
+
+/***/ }),
+
+/***/ "./src/app/blog/blogposts.ts":
+/*!***********************************!*\
+  !*** ./src/app/blog/blogposts.ts ***!
+  \***********************************/
+/*! exports provided: posts */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "posts", function() { return posts; });
+var posts = [
+    {
+        imgLocation: '../../assets/me.png',
+        date: 'date',
+        title: 'Welcome to my "Blog"!',
+        content: "This isn't really a blog, it's more of a collection of events\n         and projects that I felt were worthwhile to put on the internet. Check it out!"
+    },
+    {
+        imgLocation: 'https://i.imgur.com/NNy5eBJ.gif',
+        date: 'date',
+        title: 'Now Playing Page',
+        content: "In ancicipation of the 2018 New York Marathon, I wanted to create a fun app/tool/project to\n         share my experience with everyone else. I was able to create a mini app using the spotify app to share my\n         current song, without any authorization from the user.\n\n         Check it out now on the now playing tab! The app\n         also looks up my personal recommendations and thoughts for a few songs, namely my \"GAL 26.2\" marathon playlist."
+    },
+    {
+        imgLocation: 'https://i.imgur.com/AeA81hc.png',
+        date: 'date',
+        title: 'Groovin Against Leukemia',
+        content: "In November 2017, I watched the New York Marathon and loved. The scale is massive, it's inspiring, and\n         I've always toyed around with doing."
+    },
+    {
+        imgLocation: 'https://i.imgur.com/lq6qpxT.jpg',
+        date: 'date',
+        title: 'IBM Blockchain: State Of Delaware',
+        content: 'TODO'
+    },
+    {
+        imgLocation: 'https://i.imgur.com/qeGX1tj.jpg',
+        date: 'date',
+        title: 'Old Relly',
+        content: 'TODO'
+    },
+    {
+        imgLocation: 'https://i.imgur.com/dXoMr47.png',
+        date: 'date',
+        title: 'Tiger Bed Rentals',
+        content: 'TODO'
+    },
+    {
+        imgLocation: '../../assets/me.png',
+        date: 'date',
+        title: 'Other...',
+        content: 'TODO'
+    }
+];
 
 
 
@@ -491,7 +553,7 @@ module.exports = ".now-playing{\n    max-width: 800px;\n    margin: 0 auto;\n   
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"now-playing\">\n\n      <div *ngIf=\"isLoading\">\n        <div class=\"loader\"><img src=\"https://i.redd.it/ounq1mw5kdxy.gif\"></div>\n      </div>\n\n      <div *ngIf=\"!isLoading\">\n\n        <div *ngIf=\"isPlaying\">\n          <h1 class=\"page-header\"><img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"> Jack Is Listening To\n            Music! <img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"></h1>\n          <h2 class=\"song-tile\">Song: {{songTitle}}</h2>\n          <h2 class=\"song-artists\">Artist{{(hasMultipleArtists) ? 's' : ''}}: {{artists}}</h2>\n          <div>\n            <img class=\"album-art\" src={{songAlbumImage}}>\n          </div>\n\n          <div class=\"my-thoughts-container\">\n            <h4>My thoughts on this song: </h4>\n            <p>{{(review == '') ? 'No thoughts recorded yet!' : '\"' + review + '\"'}}</p>\n          </div>\n\n          <div class=\"about-content\">\n            <p>Listen to this song <a href={{externalLink}}>in your browser</a> or open it up <a [href]=\"spotifyUri\">directly\n                in Spotify</a>!</p>\n          </div>\n        </div>\n\n        <div *ngIf=\"!isPlaying\">\n          <h1 class=\"page-header\"> Jack Is Not Listening To Music.</h1>\n          <p>Check back later for some jams!</p>\n        </div>\n\n        <div>\n          <p>I wanted to create a way to share my music at all times, especially during the 2018 New York Marathon.\n            Check out the original version of this page <a href=\"https://jacks-now-playing.herokuapp.com/\">here</a> or\n            view the code on <a href=\"https://github.com/jfobrien29/spotify-marathon-api\">github</a>.</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"now-playing\">\n\n      <div *ngIf=\"isLoading\">\n        <div class=\"loader\"><img src=\"https://i.redd.it/ounq1mw5kdxy.gif\"></div>\n      </div>\n\n      <div *ngIf=\"!isLoading\">\n\n        <div *ngIf=\"isPlaying\">\n          <h1 class=\"page-header\"><img src=\"https://i.imgur.com/NNy5eBJ.gif\" height=\"20\" width=\"20\"> Jack Is Listening To\n            Music! <img src=\"https://i.imgur.com/NNy5eBJ.gif\" height=\"20\" width=\"20\"></h1>\n          <h2 class=\"song-tile\">Song: {{songTitle}}</h2>\n          <h2 class=\"song-artists\">Artist{{(hasMultipleArtists) ? 's' : ''}}: {{artists}}</h2>\n          <div>\n            <img class=\"album-art\" src={{songAlbumImage}}>\n          </div>\n\n          <div class=\"my-thoughts-container\">\n            <h4>My thoughts on this song: </h4>\n            <p>{{(review == '') ? 'No thoughts on this song yet!' : '\"' + review + '\"'}}</p>\n          </div>\n\n          <div class=\"about-content\">\n            <p>Listen to this song <a href={{externalLink}}>in your browser</a> or open it up <a [href]=\"spotifyUri\">directly\n                in Spotify</a>!</p>\n          </div>\n        </div>\n\n        <div *ngIf=\"!isPlaying\">\n          <h1 class=\"page-header\"> Jack Is Not Listening To Music.</h1>\n          <p>Check back later for some jams!</p>\n        </div>\n\n        <div>\n          <p>I wanted to create a way to share my music at all times, especially during the 2018 New York Marathon.\n            Check out the original version of this page <a href=\"https://jacks-now-playing.herokuapp.com/\">here</a> or\n            view the code on <a href=\"https://github.com/jfobrien29/spotify-marathon-api\">github</a>.</p>\n          <p>It's not too late to donnate to the Leukemia Lymphoma Socity. \n            <a href=\"https://donate.lls.org/tnt/donate?programGroupName=TNT&fundraiserPageID=3143860&participantFirstName=Jack&participantLastName=O%27Brien&displayName=Jack%20O%27Brien&fundraiserPageURL=https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien\">\n            Click here to donnate fast!</a></p>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
