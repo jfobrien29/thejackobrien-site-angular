@@ -19,11 +19,11 @@
 
           <div class="my-thoughts-container">
             <h4>My thoughts on this song: </h4>
-            <p>"{{(review == '') ? 'No thoughts recorded yet!' : review}}"</p>
+            <p>{{(review == '') ? 'No thoughts recorded yet!' : '"' + review + '"'}}</p>
           </div>
 
           <div class="about-content">
-            <p>Listen to this song <a href={{externalLink}}>in your browser</a> or open it up <a href={{spotifyUri}}>directly
+            <p>Listen to this song <a href={{externalLink}}>in your browser</a> or open it up <a href=spotifyUri>directly
                 in Spotify</a>!</p>
           </div>
         </div>

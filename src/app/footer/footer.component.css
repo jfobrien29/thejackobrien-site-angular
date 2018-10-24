@@ -20,3 +20,16 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
+#footer-plug {
+    max-width: 500px;
+    padding-left: 30px; 
+    float: right;
+}
+
+@media (max-width:800px){
+    #footer-plug {
+        float: none;
+        padding-left: 10px; 
+    }
+}
