@@ -14,11 +14,14 @@
           <h2 class="song-tile">Song: {{songTitle}}</h2>
           <h2 class="song-artists">Artist{{(hasMultipleArtists) ? 's' : ''}}: {{artists}}</h2>
           <div>
-            <img class="album-art" src={{songAlbumImage}} height="300" width="300">
+            <img class="album-art" src={{songAlbumImage}}>
           </div>
+
           <div class="my-thoughts-container">
-            <p>My thoughts on this song: {{(review == '') ? 'No thoughts recorded yet!' : review}}</p>
+            <h4>My thoughts on this song: </h4>
+            <p>"{{(review == '') ? 'No thoughts recorded yet!' : review}}"</p>
           </div>
+
           <div class="about-content">
             <p>Listen to this song <a href={{externalLink}}>in your browser</a> or open it up <a href={{spotifyUri}}>directly
                 in Spotify</a>!</p>

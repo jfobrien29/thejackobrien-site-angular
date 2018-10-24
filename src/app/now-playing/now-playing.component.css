@@ -13,14 +13,53 @@
     padding: 10px;
     background-color: #333;
     border-radius: 3%;
+    height: 300px;
+    width: 300px;
 }
 
-/* .my-thoughts-container{
+.my-thoughts-container {
     background-color: #CC6600;
-    padding: 10px;
+    max-width: 520px;
+    padding: 0px;
+    text-align: center;
+    margin: 0 auto;
+    border-width: medium;
+    border-color: #333;
+    padding-bottom: 5px;
+    border-radius: 2%;
 }
 
-.thoughts{
-    background-color: white;
-    padding: 10px;
-} */
+.my-thoughts-container h4{
+    padding: 4px;
+    font-weight: normal;
+    border: #333;
+    border-width: medium;
+    padding-bottom: 0px;
+}
+
+.my-thoughts-container p{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 0px;
+    font-weight: bold;
+    padding-left: 3px;
+    padding-right: 3px;
+    height: auto;
+    line-height: 1.5;
+    letter-spacing: .08em;
+    font-size: large;
+    font-style: italic;
+}
+
+@media (max-width:320px){
+    .album-art{
+        height: 90%;
+        width: 90%;
+    }
+}
+
+@media (max-width:546px){
+    .my-thoughts-container{
+        width: 90%;
+    }
+}
