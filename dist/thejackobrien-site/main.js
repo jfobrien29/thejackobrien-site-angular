@@ -425,7 +425,7 @@ module.exports = "    /* LandingComponent's private CSS styles */\n    \n    .ab
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"about\">\n      <div class=\"about-author\">\n        <img src=\"../../assets/me.png\">\n      </div>\n      <h1 class=\"about-title\">Who is Jack O'Brien?</h1>\n      <div class=\"about-content\">\n        <p>Hey! There are many \"Jack O'Briens\" in the world, but I am <em><b>the</b></em> one you're looking for!\n          <br>\n          <br>\n          I'm currently a full stack developer for IBM Blockchain. I like solving complex\n          problems and tackling big projects in and out of my work life. \n          This site is a constant work in\n          progress with great links, info, and projects, so take a look around!</p>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"about\">\n      <div class=\"about-author\">\n        <img src=\"../../assets/me.png\">\n      </div>\n      <h1 class=\"about-title\">Who is The Jack O'Brien?</h1>\n      <div class=\"about-content\">\n        <p>Hey! There are many \"Jack O'Briens\" in the world, but I'm <em><b>the</b></em> one you're looking for!\n          <br>\n          <br>\n          I'm currently a full stack developer for IBM Blockchain. I like solving complex\n          problems and tackling big projects in and out of my work life in New York City. \n          This site is a constant work in\n          progress with great links, info, and projects, so take a look around!</p>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -480,7 +480,7 @@ var LandingComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".now-playing{\n    max-width: 800px;\n    margin: 0 auto;\n    padding: 40px 0;\n    text-align: center\n}\n\n.loader img{\n    max-width: 400px;\n}\n\n.album-art{\n    padding: 10px;\n    background-color: black\n}\n\n/* .my-thoughts-container{\n    background-color: #CC6600;\n    padding: 10px;\n}\n\n.thoughts{\n    background-color: white;\n    padding: 10px;\n} */"
+module.exports = ".now-playing{\n    max-width: 800px;\n    margin: 0 auto;\n    padding: 40px 0;\n    text-align: center\n}\n\n.loader img{\n    max-width: 400px;\n}\n\n.album-art{\n    padding: 10px;\n    background-color: #333;\n    border-radius: 3%;\n}\n\n/* .my-thoughts-container{\n    background-color: #CC6600;\n    padding: 10px;\n}\n\n.thoughts{\n    background-color: white;\n    padding: 10px;\n} */"
 
 /***/ }),
 
@@ -491,7 +491,7 @@ module.exports = ".now-playing{\n    max-width: 800px;\n    margin: 0 auto;\n   
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"now-playing\">\n\n      <div *ngIf=\"isLoading\">\n        <div class=\"loader\"><img src=\"https://i.redd.it/ounq1mw5kdxy.gif\"></div>\n      </div>\n\n      <div *ngIf=\"!isLoading\">\n\n        <div *ngIf=\"isPlaying\">\n          <h1 class=\"page-header\"><img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"> Jack Is Listening To\n            Music! <img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"></h1>\n          <h2 class=\"song-tile\">Song: {{songTitle}}</h2>\n          <h2 class=\"song-artists\">Artist{{(numArtists == 1) ? '' : 's'}}: {{artists}}</h2>\n          <div>\n            <img class=\"album-art\" src={{songAlbumImage}} height=\"300\" width=\"300\">\n          </div>\n          <div class=\"my-thoughts-container\">\n            <p>My thoughts on this song: {{(review == '') ? 'No thoughts recorded yet!' : review}}</p>\n          </div>\n          <div class=\"about-content\">\n            <p>Listen to this song <a href={{externalLink}}>in your browser</a> or open it up <a href={{spotifyUri}}>directly\n                in Spotify</a>!</p>\n          </div>\n        </div>\n\n        <div *ngIf=\"!isPlaying\">\n          <h1 class=\"page-header\"> Jack Is Not Listening To Music.</h1>\n          <p>Check back later for some jams!</p>\n        </div>\n\n        <div>\n          <p>I wanted to create a way to share my music at all times, especially during the 2018 New York Marathon.\n            Check out the original version of this page <a href=\"https://jacks-now-playing.herokuapp.com/\">here</a> or\n            view the code on <a href=\"https://github.com/jfobrien29/spotify-marathon-api\">github</a>.</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"now-playing\">\n\n      <div *ngIf=\"isLoading\">\n        <div class=\"loader\"><img src=\"https://i.redd.it/ounq1mw5kdxy.gif\"></div>\n      </div>\n\n      <div *ngIf=\"!isLoading\">\n\n        <div *ngIf=\"isPlaying\">\n          <h1 class=\"page-header\"><img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"> Jack Is Listening To\n            Music! <img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"></h1>\n          <h2 class=\"song-tile\">Song: {{songTitle}}</h2>\n          <h2 class=\"song-artists\">Artist{{(hasMultipleArtists) ? 's' : ''}}: {{artists}}</h2>\n          <div>\n            <img class=\"album-art\" src={{songAlbumImage}} height=\"300\" width=\"300\">\n          </div>\n          <div class=\"my-thoughts-container\">\n            <p>My thoughts on this song: {{(review == '') ? 'No thoughts recorded yet!' : review}}</p>\n          </div>\n          <div class=\"about-content\">\n            <p>Listen to this song <a href={{externalLink}}>in your browser</a> or open it up <a href={{spotifyUri}}>directly\n                in Spotify</a>!</p>\n          </div>\n        </div>\n\n        <div *ngIf=\"!isPlaying\">\n          <h1 class=\"page-header\"> Jack Is Not Listening To Music.</h1>\n          <p>Check back later for some jams!</p>\n        </div>\n\n        <div>\n          <p>I wanted to create a way to share my music at all times, especially during the 2018 New York Marathon.\n            Check out the original version of this page <a href=\"https://jacks-now-playing.herokuapp.com/\">here</a> or\n            view the code on <a href=\"https://github.com/jfobrien29/spotify-marathon-api\">github</a>.</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -526,9 +526,9 @@ var NowPlayingComponent = /** @class */ (function () {
         var _this = this;
         this.isLoading = true;
         this.spotifyService.getSessionData().then(function (data) {
-            if (data !== 'Not Playing') {
-                _this.isPlaying = true;
-                _this.data = data;
+            _this.data = data;
+            _this.isPlaying = _this.data.isPlaying;
+            if (_this.isPlaying) {
                 _this.songTitle = _this.data.item.name;
                 _this.songAlbumImage = _this.data.item.album.images[0].url;
                 _this.externalLink = _this.data.item.external_urls.spotify;
@@ -536,13 +536,10 @@ var NowPlayingComponent = /** @class */ (function () {
                 _this.artists = _this.data.item.artists.reduce(function (artistString, currArtist, index) {
                     return (index === 0) ? currArtist.name : artistString + ', ' + currArtist.name;
                 }, '');
-                _this.numArtists = _this.data.item.artists.length;
+                _this.hasMultipleArtists = _this.data.item.artists.length > 1;
                 _this.review = _this.data.review;
             }
-            else {
-                _this.isPlaying = false;
-            }
-            setTimeout(function () { _this.isLoading = false; }, 1000);
+            setTimeout(function () { _this.isLoading = false; }, 1500);
         });
     };
     NowPlayingComponent = __decorate([
