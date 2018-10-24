@@ -288,7 +288,7 @@ var BlogComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#footer {\n    background-color: #2f2f2f;\n    padding: 30px 0;\n}\n\n#footer h4 {\n    color: white;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n}\n\n#footer p {\n    color: white;\n}\n\n.column {\n    min-width: 200px;\n    display: inline-block;\n    vertical-align: top;\n    padding-left: 10px;\n    padding-right: 10px;\n}"
+module.exports = "#footer {\n    background-color: #2f2f2f;\n    padding: 30px 0;\n}\n\n#footer h4 {\n    color: white;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n}\n\n#footer p {\n    color: white;\n}\n\n.column {\n    min-width: 200px;\n    display: inline-block;\n    vertical-align: top;\n    padding-left: 10px;\n    padding-right: 10px;\n}\n\n#footer-plug {\n    max-width: 500px;\n    padding-left: 30px; \n    float: right;\n}\n\n@media (max-width:800px){\n    #footer-plug {\n        float: none;\n        padding-left: 10px; \n    }\n}"
 
 /***/ }),
 
@@ -299,7 +299,7 @@ module.exports = "#footer {\n    background-color: #2f2f2f;\n    padding: 30px 0
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"footer\">\n  <div class=\"container\">\n    <div class=\"column\">\n      <h4>A Few Great Links</h4>\n      <p>\n        <a href=\"https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien\">LLS NYC Marathon Fundraiser</a>\n        <br>\n        <a href=\"https://www.instagram.com/oldrelly/\">Old Relly Instagram</a>\n        <br>\n        <a href=\"https://github.com/jfobrien29/\">GitHub</a>\n        <br>\n        <a href=\"https://www.linkedin.com/in/john-jack-o-brien-53bbaa105/\">LinkedIn</a>\n        <br>\n        <a href=\"mailto:thejackobrien29@gmail.com\">Email Me</a>\n      </p>\n    </div>\n    \n    <div class=\"column\">\n      <h4>My Shameless Plug</h4>\n      <p>I'm a builder. Princeton Engineering. Computer Science. <br>\n        NCAA Lacrosse. Tiger Bed Rentals. Old Relly. IBM Blockchain.\n      </p>\n    </div>\n  </div>\n</div>"
+module.exports = "<div id=\"footer\">\n  <div class=\"container\">\n    <div id=\"footer-links\" class=\"column\">\n      <h4>A Few Great Links</h4>\n\n      <p>\n        <a href=\"https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien\">LLS NYC Marathon Fundraiser</a>\n        <br>\n        <a href=\"https://www.instagram.com/oldrelly/\">Old Relly Instagram</a>\n        <br>\n        <a href=\"https://github.com/jfobrien29/\">GitHub</a>\n        <br>\n        <a href=\"https://www.linkedin.com/in/john-jack-o-brien-53bbaa105/\">LinkedIn</a>\n        <br>\n        <a href=\"mailto:thejackobrien29@gmail.com\">Email Me</a>\n      </p>\n\n    </div>\n\n    <div id=\"footer-plug\" class=\"column\">\n      <h4>My Shameless Plug</h4>\n      <p>I'm a builder. Not a sheep. Princeton Engineering. \n        Computer Science. NCAA Lacrosse. Tiger Bed Rentals.\n        Old Relly. IBM Blockchain.\n      </p>\n      <p>Want to get in touch? <a href=\"mailto:thejackobrien29@gmail.com\">Email me!</a></p>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -491,7 +491,7 @@ module.exports = ".now-playing{\n    max-width: 800px;\n    margin: 0 auto;\n   
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"now-playing\">\n\n      <div *ngIf=\"isLoading\">\n        <div class=\"loader\"><img src=\"https://i.redd.it/ounq1mw5kdxy.gif\"></div>\n      </div>\n\n      <div *ngIf=\"!isLoading\">\n\n        <div *ngIf=\"isPlaying\">\n          <h1 class=\"page-header\"><img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"> Jack Is Listening To\n            Music! <img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"></h1>\n          <h2 class=\"song-tile\">Song: {{songTitle}}</h2>\n          <h2 class=\"song-artists\">Artist{{(hasMultipleArtists) ? 's' : ''}}: {{artists}}</h2>\n          <div>\n            <img class=\"album-art\" src={{songAlbumImage}}>\n          </div>\n\n          <div class=\"my-thoughts-container\">\n            <h4>My thoughts on this song: </h4>\n            <p>\"{{(review == '') ? 'No thoughts recorded yet!' : review}}\"</p>\n          </div>\n\n          <div class=\"about-content\">\n            <p>Listen to this song <a href={{externalLink}}>in your browser</a> or open it up <a href={{spotifyUri}}>directly\n                in Spotify</a>!</p>\n          </div>\n        </div>\n\n        <div *ngIf=\"!isPlaying\">\n          <h1 class=\"page-header\"> Jack Is Not Listening To Music.</h1>\n          <p>Check back later for some jams!</p>\n        </div>\n\n        <div>\n          <p>I wanted to create a way to share my music at all times, especially during the 2018 New York Marathon.\n            Check out the original version of this page <a href=\"https://jacks-now-playing.herokuapp.com/\">here</a> or\n            view the code on <a href=\"https://github.com/jfobrien29/spotify-marathon-api\">github</a>.</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"now-playing\">\n\n      <div *ngIf=\"isLoading\">\n        <div class=\"loader\"><img src=\"https://i.redd.it/ounq1mw5kdxy.gif\"></div>\n      </div>\n\n      <div *ngIf=\"!isLoading\">\n\n        <div *ngIf=\"isPlaying\">\n          <h1 class=\"page-header\"><img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"> Jack Is Listening To\n            Music! <img src=\"../../assets/bars.gif\" height=\"20\" width=\"20\"></h1>\n          <h2 class=\"song-tile\">Song: {{songTitle}}</h2>\n          <h2 class=\"song-artists\">Artist{{(hasMultipleArtists) ? 's' : ''}}: {{artists}}</h2>\n          <div>\n            <img class=\"album-art\" src={{songAlbumImage}}>\n          </div>\n\n          <div class=\"my-thoughts-container\">\n            <h4>My thoughts on this song: </h4>\n            <p>{{(review == '') ? 'No thoughts recorded yet!' : '\"' + review + '\"'}}</p>\n          </div>\n\n          <div class=\"about-content\">\n            <p>Listen to this song <a href={{externalLink}}>in your browser</a> or open it up <a [href]=\"spotifyUri\">directly\n                in Spotify</a>!</p>\n          </div>\n        </div>\n\n        <div *ngIf=\"!isPlaying\">\n          <h1 class=\"page-header\"> Jack Is Not Listening To Music.</h1>\n          <p>Check back later for some jams!</p>\n        </div>\n\n        <div>\n          <p>I wanted to create a way to share my music at all times, especially during the 2018 New York Marathon.\n            Check out the original version of this page <a href=\"https://jacks-now-playing.herokuapp.com/\">here</a> or\n            view the code on <a href=\"https://github.com/jfobrien29/spotify-marathon-api\">github</a>.</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -507,6 +507,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NowPlayingComponent", function() { return NowPlayingComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _spotify_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../spotify.service */ "./src/app/spotify.service.ts");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -518,9 +519,11 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
 var NowPlayingComponent = /** @class */ (function () {
-    function NowPlayingComponent(spotifyService) {
+    function NowPlayingComponent(spotifyService, sanitizer) {
         this.spotifyService = spotifyService;
+        this.sanitizer = sanitizer;
     }
     NowPlayingComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -532,15 +535,18 @@ var NowPlayingComponent = /** @class */ (function () {
                 _this.songTitle = _this.data.item.name;
                 _this.songAlbumImage = _this.data.item.album.images[0].url;
                 _this.externalLink = _this.data.item.external_urls.spotify;
-                _this.spotifyUri = _this.data.item.uri;
+                _this.spotifyUri = _this.sanitize(_this.data.item.uri);
                 _this.artists = _this.data.item.artists.reduce(function (artistString, currArtist, index) {
                     return (index === 0) ? currArtist.name : artistString + ', ' + currArtist.name;
                 }, '');
                 _this.hasMultipleArtists = _this.data.item.artists.length > 1;
                 _this.review = _this.data.review;
             }
-            setTimeout(function () { _this.isLoading = false; }, 1500);
+            setTimeout(function () { _this.isLoading = false; }, 1000);
         });
+    };
+    NowPlayingComponent.prototype.sanitize = function (uri) {
+        return this.sanitizer.bypassSecurityTrustUrl(uri);
     };
     NowPlayingComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -548,7 +554,7 @@ var NowPlayingComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./now-playing.component.html */ "./src/app/now-playing/now-playing.component.html"),
             styles: [__webpack_require__(/*! ./now-playing.component.css */ "./src/app/now-playing/now-playing.component.css")]
         }),
-        __metadata("design:paramtypes", [_spotify_service__WEBPACK_IMPORTED_MODULE_1__["SpotifyService"]])
+        __metadata("design:paramtypes", [_spotify_service__WEBPACK_IMPORTED_MODULE_1__["SpotifyService"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["DomSanitizer"]])
     ], NowPlayingComponent);
     return NowPlayingComponent;
 }());

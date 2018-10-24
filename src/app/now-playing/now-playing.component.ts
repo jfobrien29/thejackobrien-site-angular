@@ -31,9 +31,11 @@ export class NowPlayingComponent implements OnInit {
         this.songAlbumImage = this.data.item.album.images[0].url;
         this.externalLink = this.data.item.external_urls.spotify;
         this.spotifyUri = this.sanitize(this.data.item.uri);
+
         this.artists = this.data.item.artists.reduce((artistString, currArtist, index) => {
           return (index === 0) ? currArtist.name : artistString + ', ' + currArtist.name;
         }, '');
+
         this.hasMultipleArtists = this.data.item.artists.length > 1;
         this.review = this.data.review;
       }
