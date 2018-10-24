@@ -27,3 +27,16 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
+
+.post-container {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.post-content p {
+    justify-content: end;
+}
+
+.author-name {
+    text-emphasis: bold;
+}

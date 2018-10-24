@@ -288,7 +288,7 @@ var BlogComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#footer {\n    background-color: #2f2f2f;\n    padding: 30px 0;\n}\n\n#footer h4 {\n    color: white;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n}\n\n#footer p {\n    color: white;\n}"
+module.exports = "#footer {\n    background-color: #2f2f2f;\n    padding: 30px 0;\n}\n\n#footer h4 {\n    color: white;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n}\n\n#footer p {\n    color: white;\n}\n\n.column {\n    min-width: 200px;\n    display: inline-block;\n    vertical-align: top;\n    padding-left: 10px;\n    padding-right: 10px;\n}"
 
 /***/ }),
 
@@ -299,7 +299,7 @@ module.exports = "#footer {\n    background-color: #2f2f2f;\n    padding: 30px 0
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"footer\">\n  <div class=\"container\">\n    <div class=\"column\">\n      <h4>A Few Great Links</h4>\n      <p>\n        <a href=\"https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien\">LLS NYC Marathon Fundraiser</a>\n        <br>\n        <a href=\"https://www.instagram.com/oldrelly/\">Old Relly Instagram</a>\n        <br>\n        <a href=\"https://github.com/jfobrien29/\">GitHub</a>\n        <br>\n        <a href=\"https://www.linkedin.com/in/john-jack-o-brien-53bbaa105/\">LinkedIn</a>\n        <br>\n        <a href=\"mailto:thejackobrien29@gmail.com\">Email Me</a>\n      </p>\n    </div>\n    \n    <div class=\"column\">\n      <h4>My Shameless Plug</h4>\n      <p>I'm a builder. Princeton Engineering. Computer Science. <br>\n        NCAA Lacrosse. Old Relly. IBM Blockchain.\n      </p>\n    </div>\n  </div>\n</div>"
+module.exports = "<div id=\"footer\">\n  <div class=\"container\">\n    <div class=\"column\">\n      <h4>A Few Great Links</h4>\n      <p>\n        <a href=\"https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien\">LLS NYC Marathon Fundraiser</a>\n        <br>\n        <a href=\"https://www.instagram.com/oldrelly/\">Old Relly Instagram</a>\n        <br>\n        <a href=\"https://github.com/jfobrien29/\">GitHub</a>\n        <br>\n        <a href=\"https://www.linkedin.com/in/john-jack-o-brien-53bbaa105/\">LinkedIn</a>\n        <br>\n        <a href=\"mailto:thejackobrien29@gmail.com\">Email Me</a>\n      </p>\n    </div>\n    \n    <div class=\"column\">\n      <h4>My Shameless Plug</h4>\n      <p>I'm a builder. Princeton Engineering. Computer Science. <br>\n        NCAA Lacrosse. Tiger Bed Rentals. Old Relly. IBM Blockchain.\n      </p>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -351,7 +351,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#header {\n    background-color: #CC6600;\n    height: 100px;\n    line-height: 100px;\n}\n\n#header a {\n    color: white;\n    text-decoration: none;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n}\n\n#header a:hover {\n    color: #222;\n}\n\n#header-title {\n    display: block;\n    float: left;\n    font-size: 25px;\n    font-weight: bold;\n}\n\n#header-nav {\n    display: block;\n    float: right;\n    margin-top: 0;\n}\n\n#header-nav li {\n    display: inline;\n    padding-left: 20px;\n}"
+module.exports = "#header {\n    background-color: #CC6600;\n    height: 100px;\n    line-height: 100px;\n}\n\n#header a {\n    color: white;\n    text-decoration: none;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n}\n\n#header a:hover {\n    color: #222;\n}\n\n#header-title {\n    display: block;\n    float: left;\n    font-size: 25px;\n    font-weight: bold;\n    padding-left: 10px;\n}\n\n#header-nav {\n    display: block;\n    float: right;\n    margin-top: 0;\n}\n\n#header-nav li {\n    display: inline;\n    padding-left: 20px;\n}\n\n.container {\n    max-width: 900px;\n    margin: 0 auto;\n}\n\n.lastElm {\n    padding-right: 10px;\n}\n\n@media (max-width:680px){\n    #header {\n        background-color: #CC6600;\n        height: 200px;\n        line-height: 60px;\n    }\n\n    #header-title {\n        display: block;\n        float: none;\n        font-size: 25px;\n        font-weight: bold;\n        padding-left: 0px;\n        padding-top: 10px;\n    }\n\n    #header a {\n        color: white;\n        text-decoration: none;\n        text-transform: uppercase;\n        letter-spacing: 0.1em;\n        text-align: center;\n    }\n\n    #header-nav {\n        display: block;\n        float: none;\n        margin-top: 0;\n        line-height: 40px;\n        text-align: center;\n        padding-left: 0px;\n    }\n\n    #header-nav li {\n        display: block;\n        padding-left: 20px;\n    }\n}"
 
 /***/ }),
 
@@ -362,7 +362,7 @@ module.exports = "#header {\n    background-color: #CC6600;\n    height: 100px;\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"header\">\n  <div class=\"container\">\n    <a id=\"header-title\" routerLink=\"\">The Jack O'Brien</a>\n    <ul id=\"header-nav\">\n      <li>\n        <a routerLink=\"nowPlaying\">Now Playing</a>\n      </li>\n      <li>\n        <a routerLink=\"blog\">Blog</a>\n      </li>\n      <li>\n        <a href=\"../../assets/Jack_OBrien_Resume_October_2018.pdf\" download>Resume</a>\n      </li>\n    </ul>\n  </div>\n</div>"
+module.exports = "<div id=\"header\">\n  <div class=\"container\">\n    <a id=\"header-title\" routerLink=\"\">The Jack O'Brien</a>\n    <ul id=\"header-nav\">\n      <li>\n        <a routerLink=\"nowPlaying\">Now Playing</a>\n      </li>\n      <li>\n        <a routerLink=\"blog\">Blog</a>\n      </li>\n      <li>\n        <a class=\"lastElm\" href=\"../../assets/Jack_OBrien_Resume_October_2018.pdf\" download>Resume</a>\n      </li>\n    </ul>\n  </div>\n</div>"
 
 /***/ }),
 
