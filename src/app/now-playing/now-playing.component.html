@@ -17,9 +17,9 @@
             <img class="album-art" src={{songAlbumImage}}>
           </div>
 
-          <div class="my-thoughts-container">
+          <div class="my-thoughts-container" *ngIf="hasThoughts">
             <h4>My thoughts on this song: </h4>
-            <p>{{(review == '') ? 'No thoughts on this song yet!' : '"' + review + '"'}}</p>
+            <p>"{{review}}"</p>
           </div>
 
           <div class="about-content">
