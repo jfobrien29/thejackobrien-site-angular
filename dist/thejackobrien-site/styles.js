@@ -539,7 +539,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/John.OBrien@ibm.com/Dev/heroku/personal-site-angular/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /Users/jackobrien/dev/thejackobrien-site-angular/src/styles.css */"./src/styles.css");
 
 
 /***/ })
