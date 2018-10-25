@@ -304,38 +304,38 @@ var posts = [
     {
         imgLocation: 'https://i.imgur.com/NNy5eBJ.gif',
         date: 'date',
-        title: 'Now Playing Page',
-        content: "In ancicipation of the 2018 New York Marathon, I wanted to create a fun app/tool/project to\n         share my experience with everyone else, especially those who generously gave! I came up with the idea to share\n         my music, and created a mini app using Spotify's developer APIs. Check it out now on the now playing tab! The app\n         wil display the song I am currently listening to, provide links if you would like to listen along.\n         For a few songs I've also written what goes through my head when it comes on, namely all songs on my\n         <a href=https://open.spotify.com/user/12137830555/playlist/2JUf2gUEcVwxOue6vaASwa?si=fJzXY5RQRua6JmYtVmXZfQ>\n        \"GAL 26.2\"</a> marathon playlist."
+        title: 'Now Playing Page is Online',
+        content: "In ancicipation of the 2018 New York Marathon, I wanted to create a fun app/tool/project to\n         share my experience with everyone, especially those who generously gave to LLS! I came up with the idea to share\n         my music, and created a mini app using Spotify's developer APIs. Check it out now on the \n         <a href=\"nowPlaying\">now playing</a> tab! When I'm using spotify, the app\n         displays the song I am currently listening to and provides links to listen along.\n         For a small subset of songs you'll also see my thoughts, namely all songs on my\n         <a href=https://open.spotify.com/user/12137830555/playlist/2JUf2gUEcVwxOue6vaASwa?si=fJzXY5RQRua6JmYtVmXZfQ>\n        \"GAL 26.2\"</a> marathon playlist. Listen along!"
     },
     {
         imgLocation: 'https://i.imgur.com/AeA81hc.png',
         date: 'date',
         title: 'Groovin Against Leukemia',
-        content: "In November 2017, I watched the New York Marathon and loved it. The scale of the race is incredible,\n         it's inspiring, and I've always toyed around with doing one just to prove I could. 6 months, 300+ miles, and $35,000+ later\n         and I am well on my way!\n\n         I started <em>Groovin Against Leukemia</em> with a few friends and we've crushed our training and raised more than we thought\n         possible for the Leukemai Lymphoma Society. The whole process has been incredible, and I've been\n         <a href=\"\">documenting it all</a> if you want to read more or donate!!"
+        content: "In November 2017, I watched the New York Marathon and loved it. The scale of the race is incredible,\n         the runners are inspiring, and I've always toyed around with doing one just to prove I could. 6 months, 300+ miles, \n         and $35,000+ later and I'm well on my way!\n         I started <em>Groovin Against Leukemia</em> back in March with a few friends, and since then \n         we've crushed our training and raised more than we thought possible for the Leukemai Lymphoma Society. \n         The whole process has been incredible, and I've been\n         <a href=\"\">documenting it all</a> if you want to read more or donate!!"
     },
     {
         imgLocation: 'https://i.imgur.com/lq6qpxT.jpg',
         date: 'date',
         title: 'IBM Blockchain: State Of Delaware',
-        content: "Since starting with IBM in the fall of 2017, the first project I can comfortably write about on the internet is\n         my project for the State of Delaware. Thanks to the freedom of information act, you can read about the project\n         <a href=\"https://tinyurl.com/y7ogmqxs\">here</a>. The project stems from an issue Dole ran into when tracking down its\n         shareholders in a class action law suit a few years ago (<a href=\"https://tinyurl.com/yamfptd9\">solid article</a>).\n         We are aiming to build a blockchain system for Delaware, where upwards of %50 of US companies are incorporated,\n         to track the authorization and issuance of stock between multiple corporations, shareholders, law firms, and\n         registered agents. Delware is looking to become the first \"Blockchain\" state!"
+        content: "Since starting with IBM Blockchain in the fall of 2017, the first project I can talk about publicly is\n         my project for the State of Delaware. Thanks to the freedom of information act, you can read about the project\n         <a href=\"https://tinyurl.com/y7ogmqxs\">here</a>. The project stems from an issue Dole (yes, the fruit company)\n         ran into when tracking down its\n         shareholders in a class action law suit a few years back (<a href=\"https://tinyurl.com/yamfptd9\">NY Times Read</a>).\n         We're trying to make sure problems like this don't happen again, and make life easier for everyone involved.\n         Over the past few months we've built a blockchain network for Delaware\n         to track the authorization and issuance of stock between corporations, shareholders, law firms, and\n         registered agents. Delware is looking to become the first blockchain-enabled state!"
     },
     {
         imgLocation: 'https://i.imgur.com/qeGX1tj.jpg',
         date: 'date',
         title: 'Old Relly: School Bus Rennovation Project',
-        content: "I could write a whole blog on the Reller, and someday I will. I have somewhat detailed notes from every day of our\n         cross country road trip, loads of resources from our build, and hundreds of pictures (thousands if you include\n            <a href=\"http://www.beargoldstein.com/\">Bear Goldstien's Photos</a>).\n         For now just check out some pictures and videos of the legendary\n         bus on our <a href=\"https://www.instagram.com/oldrelly/\">instagram page</a>."
+        content: "I could write a whole blog on the Reller, and someday I will. I have detailed notes from every day of our\n         cross country road trip, loads of resources from our build, and hundreds of pictures (thousands if you include\n            <a href=\"http://www.beargoldstein.com/\">Bear Goldstien's Photos</a>).\n         For now, you can check out select pictures and videos of our legendary\n         bus on our <a href=\"https://www.instagram.com/oldrelly/\">instagram page</a>."
     },
     {
         imgLocation: 'https://i.imgur.com/dXoMr47.png',
         date: 'date',
         title: 'Tiger Bed Rentals',
-        content: "Adam Hardej and I started our first business, Tiger Bed Rentals LLC, in the Summer of 2016. We offered full XL mattresses\n         to college students at low prices and handled all move-in, move-out, and storage. \"You rent. You sleep. We do the rest.\" After\n         we graduated from college, Adam took reigns of the business, which he eventually sold to Roommie Rents\n         in the fall of 2018. Check out the <a href=\"tigerbedrentals.com\">website for TBR</a>\n         (which I assume is still operational) and a write up on Tiger Beds from\n         <a href=\"https://kellercenter.princeton.edu/elab/tiger-bed-rentals-llc\">Princeton's entreprenourship hub</a>."
+        content: "Adam Hardej and I started our first business, Tiger Bed Rentals LLC, in the Summer of 2016. Our business\n         offered full XL mattresses\n         to college students at low prices and handled move-in, move-out, and summer storage. We thrived under the motto\n         \"You rent. You sleep. We do the rest.\" After\n         we graduated from college, Adam took rthe eigns of the business and eventually sold it Roommie Rentals\n         in the fall of 2018. Check out the <a href=\"tigerbedrentals.com\">website for TBR</a>\n         (which I assume is still operational) and a write up on Tiger Beds from\n         <a href=\"https://kellercenter.princeton.edu/elab/tiger-bed-rentals-llc\">Princeton's entreprenourship hub</a>."
     },
     {
         imgLocation: '../../assets/me.png',
         date: 'date',
         title: 'Other...',
-        content: "I'll think of some other stuff to throw in here... The page is still very much WIP!"
+        content: "I'll think of some other great bits to throw in here... see you back soon!"
     }
 ];
 
@@ -361,7 +361,7 @@ module.exports = "#footer {\n    background-color: #2f2f2f;\n    padding: 30px 0
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"footer\">\n  <div class=\"container\">\n    <div id=\"footer-links\" class=\"column\">\n      <h4>A Few Great Links</h4>\n\n      <p>\n        <a href=\"https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien\">LLS NYC Marathon Fundraiser</a>\n        <br>\n        <a href=\"https://www.instagram.com/oldrelly/\">Old Relly Instagram</a>\n        <br>\n        <a href=\"https://github.com/jfobrien29/\">GitHub</a>\n        <br>\n        <a href=\"https://www.linkedin.com/in/john-jack-o-brien-53bbaa105/\">LinkedIn</a>\n        <br>\n        <a href=\"mailto:thejackobrien29@gmail.com\">Email Me</a>\n      </p>\n\n    </div>\n\n    <div id=\"footer-plug\" class=\"column\">\n      <h4>My Shameless Plug</h4>\n      <p>Builder and Problem Solver. Princeton Engineering. \n        Computer Science. NCAA Lacrosse. Tiger Bed Rentals.\n        Old Relly. Leukemia Lymphoma Society. IBM Blockchain.\n      </p>\n      <p>Want to get in touch? <a href=\"mailto:thejackobrien29@gmail.com\">Email me!</a></p>\n    </div>\n  </div>\n</div>"
+module.exports = "<div id=\"footer\">\n  <div class=\"container\">\n    <div id=\"footer-links\" class=\"column\">\n      <h4>A Few Great Links</h4>\n\n      <p>\n        <a href=\"https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien\">LLS NYC Marathon Fundraiser</a>\n        <br>\n        <a href=\"https://www.instagram.com/oldrelly/\">Old Relly Instagram</a>\n        <br>\n        <a href=\"https://github.com/jfobrien29/\">GitHub</a>\n        <br>\n        <a href=\"https://www.linkedin.com/in/john-jack-o-brien-53bbaa105/\">LinkedIn</a>\n        <br>\n        <a href=\"mailto:thejackobrien29@gmail.com\">Email Me</a>\n      </p>\n\n    </div>\n\n    <div id=\"footer-plug\" class=\"column\">\n      <h4>Quick Bio</h4>\n      <p>Doer. Builder and Problem Solver. Princeton Engineering. \n        Computer Science. NCAA Lacrosse. Tiger Bed Rentals.\n        Old Relly. Leukemia Lymphoma Society. IBM Blockchain.\n      </p>\n      <p>Want to get in touch? <a href=\"mailto:thejackobrien29@gmail.com\">Email me!</a></p>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -542,7 +542,7 @@ var LandingComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".now-playing{\n    max-width: 800px;\n    margin: 0 auto;\n    padding: 40px 0;\n    text-align: center\n}\n\n.loader img{\n    max-width: 400px;\n}\n\n.album-art{\n    padding: 10px;\n    background-color: #333;\n    border-radius: 3%;\n    height: 300px;\n    width: 300px;\n}\n\n.my-thoughts-container {\n    background-color: #CC6600;\n    max-width: 520px;\n    padding: 0px;\n    text-align: center;\n    margin: 0 auto;\n    border-width: medium;\n    border-color: #333;\n    padding-bottom: 5px;\n    border-radius: 2%;\n}\n\n.my-thoughts-container h4{\n    padding: 4px;\n    font-weight: normal;\n    border: #333;\n    border-width: medium;\n    padding-bottom: 0px;\n}\n\n.my-thoughts-container p{\n    padding-top: 0px;\n    padding-bottom: 0px;\n    line-height: 0px;\n    font-weight: bold;\n    padding-left: 3px;\n    padding-right: 3px;\n    height: auto;\n    line-height: 1.5;\n    letter-spacing: .08em;\n    font-size: large;\n    font-style: italic;\n}\n\n@media (max-width:320px){\n    .album-art{\n        height: 90%;\n        width: 90%;\n    }\n}\n\n@media (max-width:546px){\n    .my-thoughts-container{\n        width: 90%;\n    }\n}"
+module.exports = ".now-playing{\n    max-width: 800px;\n    margin: 0 auto;\n    padding: 40px 0;\n    text-align: center\n}\n\n.loader img{\n    max-width: 400px;\n}\n\n.album-art{\n    padding: 10px;\n    background-color: #333;\n    border-radius: 3%;\n    height: 300px;\n    width: 300px;\n}\n\n.my-thoughts-container {\n    background-color: #CC6600;\n    max-width: 520px;\n    padding: 0px;\n    text-align: center;\n    margin: 0 auto;\n    border-width: medium;\n    border-color: #333;\n    padding-bottom: 5px;\n    border-radius: 2%;\n}\n\n.my-thoughts-container h4{\n    padding: 4px;\n    font-weight: normal;\n    border: #333;\n    border-width: medium;\n    padding-bottom: 0px;\n}\n\n.my-thoughts-container p{\n    padding-top: 0px;\n    padding-bottom: 0px;\n    line-height: 0px;\n    font-weight: bold;\n    padding-left: 4px;\n    padding-right: 4px;\n    height: auto;\n    line-height: 1.5;\n    letter-spacing: .08em;\n    font-size: large;\n    font-style: italic;\n}\n\np {\n    padding-left: 10px;\n    padding-right: 10px;\n}\n\n@media (max-width:340px){\n    .album-art{\n        height: 90%;\n        width: 90%;\n    }\n}\n\n@media (max-width:546px){\n    .my-thoughts-container{\n        width: 90%; \n    }\n}"
 
 /***/ }),
 
@@ -553,7 +553,7 @@ module.exports = ".now-playing{\n    max-width: 800px;\n    margin: 0 auto;\n   
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"now-playing\">\n\n      <div *ngIf=\"isLoading\">\n        <div class=\"loader\"><img src=\"https://i.redd.it/ounq1mw5kdxy.gif\"></div>\n      </div>\n\n      <div *ngIf=\"!isLoading\">\n\n        <div *ngIf=\"isPlaying\">\n          <h1 class=\"page-header\"><img src=\"https://i.imgur.com/NNy5eBJ.gif\" height=\"20\" width=\"20\"> Jack Is Listening To\n            Music! <img src=\"https://i.imgur.com/NNy5eBJ.gif\" height=\"20\" width=\"20\"></h1>\n          <h2 class=\"song-tile\">Song: {{songTitle}}</h2>\n          <h2 class=\"song-artists\">Artist{{(hasMultipleArtists) ? 's' : ''}}: {{artists}}</h2>\n          <div>\n            <img class=\"album-art\" src={{songAlbumImage}}>\n          </div>\n\n          <div class=\"my-thoughts-container\">\n            <h4>My thoughts on this song: </h4>\n            <p>{{(review == '') ? 'No thoughts on this song yet!' : '\"' + review + '\"'}}</p>\n          </div>\n\n          <div class=\"about-content\">\n            <p>Listen to this song <a href={{externalLink}}>in your browser</a> or open it up <a [href]=\"spotifyUri\">directly\n                in Spotify</a>!</p>\n          </div>\n        </div>\n\n        <div *ngIf=\"!isPlaying\">\n          <h1 class=\"page-header\"> Jack Is Not Listening To Music.</h1>\n          <p>Check back later for some jams!</p>\n        </div>\n\n        <div>\n          <p>I wanted to create a way to share my music at all times, especially during the 2018 New York Marathon.\n            Check out the original version of this page <a href=\"https://jacks-now-playing.herokuapp.com/\">here</a> or\n            view the code on <a href=\"https://github.com/jfobrien29/spotify-marathon-api\">github</a>.</p>\n          <p>It's not too late to donnate to the Leukemia Lymphoma Socity. \n            <a href=\"https://donate.lls.org/tnt/donate?programGroupName=TNT&fundraiserPageID=3143860&participantFirstName=Jack&participantLastName=O%27Brien&displayName=Jack%20O%27Brien&fundraiserPageURL=https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien\">\n            Click here to donnate fast!</a></p>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"now-playing\">\n\n      <div *ngIf=\"isLoading\">\n        <div class=\"loader\"><img src=\"https://i.redd.it/ounq1mw5kdxy.gif\"></div>\n      </div>\n\n      <div *ngIf=\"!isLoading\">\n\n        <div *ngIf=\"isPlaying\">\n          <h1 class=\"page-header\"><img src=\"https://i.imgur.com/NNy5eBJ.gif\" height=\"20\" width=\"20\"> Jack Is Listening To\n            Music! <img src=\"https://i.imgur.com/NNy5eBJ.gif\" height=\"20\" width=\"20\"></h1>\n          <h2 class=\"song-tile\">Song: {{song.songTitle}}</h2>\n          <h2 class=\"song-artists\">Artist{{(song.hasMultipleArtists) ? 's' : ''}}: {{song.artists}}</h2>\n          <div>\n            <img class=\"album-art\" src={{song.songAlbumImage}}>\n          </div>\n\n          <div class=\"my-thoughts-container\" *ngIf=\"song.hasThoughts\">\n            <h4>My thoughts on this song: </h4>\n            <p>\"{{song.review}}\"</p>\n          </div>\n\n          <div class=\"about-content\">\n            <p>Listen to this song <a href={{song.externalLink}}>in your browser</a> or open it up <a [href]=\"song.spotifyUri\">directly\n                in Spotify</a>!</p>\n          </div>\n        </div>\n\n        <div *ngIf=\"!isPlaying\">\n          <h1 class=\"page-header\"> Jack Is Not Listening To Music.</h1>\n          <p>Check back later for some jams!</p>\n        </div>\n\n        <div>\n          <p>I wanted to create a way to share my music at all times, especially during the 2018 New York Marathon.\n            Check out the original version of this page <a href=\"https://jacks-now-playing.herokuapp.com/\">here</a> or\n            view the code on <a href=\"https://github.com/jfobrien29/spotify-marathon-api\">github</a>.</p>\n          <p>It's not too late to donnate to the Leukemia Lymphoma Socity. \n            <a href=\"https://donate.lls.org/tnt/donate?programGroupName=TNT&fundraiserPageID=3143860&participantFirstName=Jack&participantLastName=O%27Brien&displayName=Jack%20O%27Brien&fundraiserPageURL=https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien\">\n            Click here to donnate right now!</a></p>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -570,6 +570,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _spotify_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../spotify.service */ "./src/app/spotify.service.ts");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _song__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./song */ "./src/app/now-playing/song.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -579,6 +580,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -594,21 +596,24 @@ var NowPlayingComponent = /** @class */ (function () {
             _this.data = data;
             _this.isPlaying = _this.data.isPlaying;
             if (_this.isPlaying) {
-                _this.songTitle = _this.data.item.name;
-                _this.songAlbumImage = _this.data.item.album.images[0].url;
-                _this.externalLink = _this.data.item.external_urls.spotify;
-                _this.spotifyUri = _this.sanitize(_this.data.item.uri);
-                _this.artists = _this.data.item.artists.reduce(function (artistString, currArtist, index) {
-                    return (index === 0) ? currArtist.name : artistString + ', ' + currArtist.name;
-                }, '');
-                _this.hasMultipleArtists = _this.data.item.artists.length > 1;
-                _this.review = _this.data.review;
+                _this.song = new _song__WEBPACK_IMPORTED_MODULE_3__["Song"](_this.data, _this.sanitizer);
             }
             setTimeout(function () { _this.isLoading = false; }, 1000);
+            _this.interval = setInterval(function () {
+                console.log('Refresh Data');
+                _this.refreshData();
+            }, 30000);
         });
     };
-    NowPlayingComponent.prototype.sanitize = function (uri) {
-        return this.sanitizer.bypassSecurityTrustUrl(uri);
+    NowPlayingComponent.prototype.refreshData = function () {
+        var _this = this;
+        this.spotifyService.getSessionData().then(function (data) {
+            _this.data = data;
+            _this.isPlaying = _this.data.isPlaying;
+            if (_this.isPlaying) {
+                _this.song = new _song__WEBPACK_IMPORTED_MODULE_3__["Song"](_this.data, _this.sanitizer);
+            }
+        });
     };
     NowPlayingComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -619,6 +624,44 @@ var NowPlayingComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_spotify_service__WEBPACK_IMPORTED_MODULE_1__["SpotifyService"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["DomSanitizer"]])
     ], NowPlayingComponent);
     return NowPlayingComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/now-playing/song.ts":
+/*!*************************************!*\
+  !*** ./src/app/now-playing/song.ts ***!
+  \*************************************/
+/*! exports provided: Song */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Song", function() { return Song; });
+var Song = /** @class */ (function () {
+    function Song(data, sanitizer) {
+        this.sanitizer = sanitizer;
+        this.sessionData = data;
+        this.songTitle = this.sessionData.item.name;
+        this.songAlbumImage = this.sessionData.item.album.images[0].url;
+        this.externalLink = this.sessionData.item.external_urls.spotify;
+        this.spotifyUri = this.sanitize(this.sessionData.item.uri);
+        var progress = this.sessionData.progress_ms;
+        var duration = this.sessionData.item.duration_ms;
+        this.timeLeft = duration - progress;
+        this.artists = this.sessionData.item.artists.reduce(function (artistString, currArtist, index) {
+            return (index === 0) ? currArtist.name : artistString + ', ' + currArtist.name;
+        }, '');
+        this.hasMultipleArtists = this.sessionData.item.artists.length > 1;
+        this.review = this.sessionData.review;
+        this.hasThoughts = this.review !== '';
+    }
+    Song.prototype.sanitize = function (uri) {
+        return this.sanitizer.bypassSecurityTrustUrl(uri);
+    };
+    return Song;
 }());
 
 
@@ -730,7 +773,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/John.OBrien@ibm.com/Dev/heroku/personal-site-angular/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/jackobrien/dev/thejackobrien-site-angular/src/main.ts */"./src/main.ts");
 
 
 /***/ })
