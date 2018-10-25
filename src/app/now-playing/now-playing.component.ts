@@ -18,6 +18,7 @@ export class NowPlayingComponent implements OnInit {
   artists: string;
   hasMultipleArtists: boolean;
   review: string;
+  hasThoughts: boolean;
 
   constructor(private spotifyService: SpotifyService, private sanitizer: DomSanitizer) { }
 
@@ -38,6 +39,7 @@ export class NowPlayingComponent implements OnInit {
 
         this.hasMultipleArtists = this.data.item.artists.length > 1;
         this.review = this.data.review;
+        this.hasThoughts = this.review !== '';
       }
 
       setTimeout(() => { this.isLoading = false; }, 1000);
