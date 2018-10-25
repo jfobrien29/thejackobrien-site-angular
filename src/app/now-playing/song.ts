@@ -1,7 +1,8 @@
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
+import { NumberValueAccessor } from '@angular/forms/src/directives';
 
 export class Song {
-    data: any;
+    sessionData: any;
     songTitle: string;
     songAlbumImage: string;
     externalLink: string;
@@ -11,19 +12,25 @@ export class Song {
     review: string;
     hasThoughts: boolean;
 
-    constructor(data, private sanitizer: DomSanitizer) {
-        this.data = data;
-        this.songTitle = this.data.item.name;
-        this.songAlbumImage = this.data.item.album.images[0].url;
-        this.externalLink = this.data.item.external_urls.spotify;
-        this.spotifyUri = this.sanitize(this.data.item.uri);
+    timeLeft: number;
 
-        this.artists = this.data.item.artists.reduce((artistString, currArtist, index) => {
+    constructor(data, private sanitizer: DomSanitizer) {
+        this.sessionData = data;
+        this.songTitle = this.sessionData.item.name;
+        this.songAlbumImage = this.sessionData.item.album.images[0].url;
+        this.externalLink = this.sessionData.item.external_urls.spotify;
+        this.spotifyUri = this.sanitize(this.sessionData.item.uri);
+
+        const progress = this.sessionData.progress_ms;
+        const duration = this.sessionData.item.duration_ms;
+        this.timeLeft = duration - progress;
+
+        this.artists = this.sessionData.item.artists.reduce((artistString, currArtist, index) => {
             return (index === 0) ? currArtist.name : artistString + ', ' + currArtist.name;
         }, '');
 
-        this.hasMultipleArtists = this.data.item.artists.length > 1;
-        this.review = this.data.review;
+        this.hasMultipleArtists = this.sessionData.item.artists.length > 1;
+        this.review = this.sessionData.review;
         this.hasThoughts = this.review !== '';
     }
 
