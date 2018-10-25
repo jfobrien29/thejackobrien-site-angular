@@ -236,7 +236,7 @@ module.exports = "\n.post {\n    max-width: 800px;\n    margin: 0 auto;\n    pad
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"content\" >\n  <div class=\"post-container\" *ngFor=\"let post of posts\">\n    <div class=\"post\">\n      <div class=\"post-header\">\n        <img src={{post.imgLocation}}>\n        <h3 class=\"post-title\">{{post.title}}</h3>\n        <!-- <p class=\"post-date\">{{post.date}}</p> -->\n      </div>\n      <div class=\"post-content\">\n        <p> {{post.content}}\n        </p>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div id=\"content\" >\n  <div class=\"post-container\" *ngFor=\"let post of posts\">\n    <div class=\"post\">\n      <div class=\"post-header\">\n        <img src={{post.imgLocation}}>\n        <h3 class=\"post-title\">{{post.title}}</h3>\n        <!-- <p class=\"post-date\">{{post.date}}</p> -->\n      </div>\n      <div class=\"post-content\">\n        <p [innerHTML]=\"post.content\"></p>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -299,43 +299,43 @@ var posts = [
         imgLocation: '../../assets/me.png',
         date: 'date',
         title: 'Welcome to my "Blog"!',
-        content: "This isn't really a blog, it's more of a collection of events\n         and projects that I felt were worthwhile to put on the internet. Check it out!"
+        content: "This isn't really a blog, it's more of a collection of events\n         and projects that I felt were worthwhile to put on the internet. Check it out and let me know what you think!"
     },
     {
         imgLocation: 'https://i.imgur.com/NNy5eBJ.gif',
         date: 'date',
         title: 'Now Playing Page',
-        content: "In ancicipation of the 2018 New York Marathon, I wanted to create a fun app/tool/project to\n         share my experience with everyone else. I was able to create a mini app using the spotify app to share my\n         current song, without any authorization from the user.\n\n         Check it out now on the now playing tab! The app\n         also looks up my personal recommendations and thoughts for a few songs, namely my \"GAL 26.2\" marathon playlist."
+        content: "In ancicipation of the 2018 New York Marathon, I wanted to create a fun app/tool/project to\n         share my experience with everyone else, especially those who generously gave! I came up with the idea to share\n         my music, and created a mini app using Spotify's developer APIs. Check it out now on the now playing tab! The app\n         wil display the song I am currently listening to, provide links if you would like to listen along.\n         For a few songs I've also written what goes through my head when it comes on, namely all songs on my\n         <a href=https://open.spotify.com/user/12137830555/playlist/2JUf2gUEcVwxOue6vaASwa?si=fJzXY5RQRua6JmYtVmXZfQ>\n        \"GAL 26.2\"</a> marathon playlist."
     },
     {
         imgLocation: 'https://i.imgur.com/AeA81hc.png',
         date: 'date',
         title: 'Groovin Against Leukemia',
-        content: "In November 2017, I watched the New York Marathon and loved. The scale is massive, it's inspiring, and\n         I've always toyed around with doing."
+        content: "In November 2017, I watched the New York Marathon and loved it. The scale of the race is incredible,\n         it's inspiring, and I've always toyed around with doing one just to prove I could. 6 months, 300+ miles, and $35,000+ later\n         and I am well on my way!\n\n         I started <em>Groovin Against Leukemia</em> with a few friends and we've crushed our training and raised more than we thought\n         possible for the Leukemai Lymphoma Society. The whole process has been incredible, and I've been\n         <a href=\"\">documenting it all</a> if you want to read more or donate!!"
     },
     {
         imgLocation: 'https://i.imgur.com/lq6qpxT.jpg',
         date: 'date',
         title: 'IBM Blockchain: State Of Delaware',
-        content: 'TODO'
+        content: "Since starting with IBM in the fall of 2017, the first project I can comfortably write about on the internet is\n         my project for the State of Delaware. Thanks to the freedom of information act, you can read about the project\n         <a href=\"https://tinyurl.com/y7ogmqxs\">here</a>. The project stems from an issue Dole ran into when tracking down its\n         shareholders in a class action law suit a few years ago (<a href=\"https://tinyurl.com/yamfptd9\">solid article</a>).\n         We are aiming to build a blockchain system for Delaware, where upwards of %50 of US companies are incorporated,\n         to track the authorization and issuance of stock between multiple corporations, shareholders, law firms, and\n         registered agents. Delware is looking to become the first \"Blockchain\" state!"
     },
     {
         imgLocation: 'https://i.imgur.com/qeGX1tj.jpg',
         date: 'date',
-        title: 'Old Relly',
-        content: 'TODO'
+        title: 'Old Relly: School Bus Rennovation Project',
+        content: "I could write a whole blog on the Reller, and someday I will. I have somewhat detailed notes from every day of our\n         cross country road trip, loads of resources from our build, and hundreds of pictures (thousands if you include\n            <a href=\"http://www.beargoldstein.com/\">Bear Goldstien's Photos</a>).\n         For now just check out some pictures and videos of the legendary\n         bus on our <a href=\"https://www.instagram.com/oldrelly/\">instagram page</a>."
     },
     {
         imgLocation: 'https://i.imgur.com/dXoMr47.png',
         date: 'date',
         title: 'Tiger Bed Rentals',
-        content: 'TODO'
+        content: "Adam Hardej and I started our first business, Tiger Bed Rentals LLC, in the Summer of 2016. We offered full XL mattresses\n         to college students at low prices and handled all move-in, move-out, and storage. \"You rent. You sleep. We do the rest.\" After\n         we graduated from college, Adam took reigns of the business, which he eventually sold to Roommie Rents\n         in the fall of 2018. Check out the <a href=\"tigerbedrentals.com\">website for TBR</a>\n         (which I assume is still operational) and a write up on Tiger Beds from\n         <a href=\"https://kellercenter.princeton.edu/elab/tiger-bed-rentals-llc\">Princeton's entreprenourship hub</a>."
     },
     {
         imgLocation: '../../assets/me.png',
         date: 'date',
         title: 'Other...',
-        content: 'TODO'
+        content: "I'll think of some other stuff to throw in here... The page is still very much WIP!"
     }
 ];
 
@@ -361,7 +361,7 @@ module.exports = "#footer {\n    background-color: #2f2f2f;\n    padding: 30px 0
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"footer\">\n  <div class=\"container\">\n    <div id=\"footer-links\" class=\"column\">\n      <h4>A Few Great Links</h4>\n\n      <p>\n        <a href=\"https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien\">LLS NYC Marathon Fundraiser</a>\n        <br>\n        <a href=\"https://www.instagram.com/oldrelly/\">Old Relly Instagram</a>\n        <br>\n        <a href=\"https://github.com/jfobrien29/\">GitHub</a>\n        <br>\n        <a href=\"https://www.linkedin.com/in/john-jack-o-brien-53bbaa105/\">LinkedIn</a>\n        <br>\n        <a href=\"mailto:thejackobrien29@gmail.com\">Email Me</a>\n      </p>\n\n    </div>\n\n    <div id=\"footer-plug\" class=\"column\">\n      <h4>My Shameless Plug</h4>\n      <p>I'm a builder. Not a sheep. Princeton Engineering. \n        Computer Science. NCAA Lacrosse. Tiger Bed Rentals.\n        Old Relly. IBM Blockchain.\n      </p>\n      <p>Want to get in touch? <a href=\"mailto:thejackobrien29@gmail.com\">Email me!</a></p>\n    </div>\n  </div>\n</div>"
+module.exports = "<div id=\"footer\">\n  <div class=\"container\">\n    <div id=\"footer-links\" class=\"column\">\n      <h4>A Few Great Links</h4>\n\n      <p>\n        <a href=\"https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien\">LLS NYC Marathon Fundraiser</a>\n        <br>\n        <a href=\"https://www.instagram.com/oldrelly/\">Old Relly Instagram</a>\n        <br>\n        <a href=\"https://github.com/jfobrien29/\">GitHub</a>\n        <br>\n        <a href=\"https://www.linkedin.com/in/john-jack-o-brien-53bbaa105/\">LinkedIn</a>\n        <br>\n        <a href=\"mailto:thejackobrien29@gmail.com\">Email Me</a>\n      </p>\n\n    </div>\n\n    <div id=\"footer-plug\" class=\"column\">\n      <h4>My Shameless Plug</h4>\n      <p>Builder and Problem Solver. Princeton Engineering. \n        Computer Science. NCAA Lacrosse. Tiger Bed Rentals.\n        Old Relly. Leukemia Lymphoma Society. IBM Blockchain.\n      </p>\n      <p>Want to get in touch? <a href=\"mailto:thejackobrien29@gmail.com\">Email me!</a></p>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -487,7 +487,7 @@ module.exports = "    /* LandingComponent's private CSS styles */\n    \n    .ab
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"about\">\n      <div class=\"about-author\">\n        <img src=\"../../assets/me.png\">\n      </div>\n      <h1 class=\"about-title\">Who is The Jack O'Brien?</h1>\n      <div class=\"about-content\">\n        <p>Hey! There are many \"Jack O'Briens\" in the world, but I'm <em><b>the</b></em> one you're looking for!\n          <br>\n          <br>\n          I'm currently a full stack developer for IBM Blockchain. I like solving complex\n          problems and tackling big projects in and out of my work life in New York City. \n          This site is a constant work in\n          progress with great links, info, and projects, so take a look around!</p>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div id=\"content\">\n  <div class=\"container\">\n    <div class=\"about\">\n      <div class=\"about-author\">\n        <img src=\"../../assets/me.png\">\n      </div>\n      <h1 class=\"about-title\">Who is The Jack O'Brien?</h1>\n      <div class=\"about-content\">\n        <p>Hey! There are many \"Jack O'Briens\" in the world, but I'm <em><b>the</b></em> one you're looking for!\n          <br>\n          <br>\n          I'm currently a full stack developer for IBM Blockchain in New York City. I like solving complex\n          problems and tackling big projects in and out of my work life. \n          This site is a constant work in progress with great links, info, and projects, so take a look around!</p>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
