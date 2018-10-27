@@ -34,9 +34,10 @@ const posts = [
     {
         imgLocation: 'https://i.imgur.com/lq6qpxT.jpg',
         date: 'date',
-        title: 'IBM Blockchain: State Of Delaware',
-        content: `Since starting with IBM Blockchain in the fall of 2017, the first project I can talk about publicly is
-         my project for the State of Delaware. Thanks to the freedom of information act, you can read about the project
+        title: 'IBM Blockchain Project: State Of Delaware',
+        content: `Since starting with IBM Blockchain a year ago, my the State of Delaware project is
+         the first one I can publicly discuss. 
+         Thanks to the freedom of information act, you can read about the project
          <a href="https://tinyurl.com/y7ogmqxs">here</a>. The project stems from an issue Dole (yes, the fruit company)
          ran into when tracking down its
          shareholders in a class action law suit a few years back (<a href="https://tinyurl.com/yamfptd9">NY Times Read</a>).
@@ -44,6 +45,13 @@ const posts = [
          Over the past few months we've built a blockchain network for Delaware
          to track the authorization and issuance of stock between corporations, shareholders, law firms, and
          registered agents. Delware is looking to become the first blockchain-enabled state!`
+    },
+    {
+        imgLocation: 'https://i.imgur.com/lq6qpxT.jpg',
+        date: 'date',
+        title: 'IBM Blockchain',
+        content: `In September 2017, I began my first full time job post-graduation working for IBM Blockchain as a consutant
+         and software developer! IBM decied in early 2017 to dedicate significant resources to building out it's blockchain capabilities.`
     },
     {
         imgLocation: 'https://i.imgur.com/qeGX1tj.jpg',
