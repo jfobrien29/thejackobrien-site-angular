@@ -1,5 +1,4 @@
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
-import { NumberValueAccessor } from '@angular/forms/src/directives';
 
 export class Song {
     sessionData: any;
@@ -30,7 +29,7 @@ export class Song {
         }, '');
 
         this.hasMultipleArtists = this.sessionData.item.artists.length > 1;
-        this.review = this.sessionData.review;
+        this.review = this.sessionData.review.trim();
         this.hasThoughts = this.review !== '';
     }
 

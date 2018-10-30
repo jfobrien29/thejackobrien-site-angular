@@ -1,7 +1,8 @@
 .now-playing{
     max-width: 800px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 20px 0;
+    padding-bottom: 0px;
     text-align: center
 }
 
@@ -38,17 +39,27 @@
 }
 
 .my-thoughts-container p{
+    padding: 0px 10px;
     padding-top: 0px;
-    padding-bottom: 0px;
-    line-height: 0px;
     font-weight: bold;
-    padding-left: 4px;
-    padding-right: 4px;
     height: auto;
     line-height: 1.5;
     letter-spacing: .08em;
     font-size: large;
     font-style: italic;
+    color: white;
+}
+
+.donation-box p{
+    border: #CC6600;
+    border-style: solid;
+    border-width: 2px;
+    margin: 10px;
+    padding: 5px 10px;
+}
+
+.github-box p{
+    font-size: 60%
 }
 
 p {

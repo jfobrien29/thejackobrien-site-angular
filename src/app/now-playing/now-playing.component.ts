@@ -28,7 +28,6 @@ export class NowPlayingComponent implements OnInit {
       if (this.isPlaying) {
         this.song = new Song(this.data, this.sanitizer);
       }
-
       setTimeout(() => { this.isLoading = false; }, 1000);
 
       this.interval = setInterval(() => {
