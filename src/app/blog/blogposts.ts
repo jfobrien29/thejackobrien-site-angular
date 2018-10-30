@@ -10,14 +10,15 @@ const posts = [
         imgLocation: 'https://i.imgur.com/NNy5eBJ.gif',
         date: 'date',
         title: 'Now Playing Page is Online!',
-        content: `In ancicipation of the 2018 New York Marathon, I wanted to create a fun app/project to
+        content: `In anticipation of the 2018 New York Marathon, I wanted to create a fun app/project to
          share my experience with everyone, especially those who generously gave to LLS! I came up with the idea to share
          my music, and created a mini app using Spotify's developer APIs. Check it out now on the
          <a href="/#/nowPlaying">Now Playing</a> tab! When I'm using spotify, the app
          displays the song I am currently listening to and provides links to listen along.
          For a small subset of songs you'll also see my thoughts, namely all songs on my
          <a href=https://open.spotify.com/user/12137830555/playlist/2JUf2gUEcVwxOue6vaASwa?si=fJzXY5RQRua6JmYtVmXZfQ>
-        "GAL 26.2"</a> marathon playlist. Listen along!`
+         "GAL 26.2"</a> marathon playlist. Listen along! (Spoiler alert, the point of this page is to get more eyes on LLS
+         and potentially race more donations during the race!)`
     },
     {
         imgLocation: 'https://i.imgur.com/AeA81hc.png',
@@ -36,24 +37,24 @@ const posts = [
         date: 'date',
         title: 'IBM Blockchain Project: State Of Delaware',
         content: `Since starting with IBM Blockchain a year ago, my project for the State of Delaware is
-         the first one I can publicly write about. 
+         the first one I can publicly write about.
          Thanks to the freedom of information act, you can read a brief writeup on our project
          <a href="https://tinyurl.com/y7ogmqxs">here</a>.
          Over the past few months we've built a blockchain network for the State of Delaware
-         to enable Delware incorporated companies (over 50% of companies in the US)
+         to enable Delaware incorporated companies (over 50% of companies in the US)
          to easily track the authorization and issuance of their stock amongst shareholders, law firms, and
-         registered agents. Delware is looking to maintain it's innovative reputation and become the first 
+         registered agents. Delaware is looking to maintain it's innovative reputation and become the first
          blockchain-enabled state!`
     },
     {
         imgLocation: 'https://i.imgur.com/lq6qpxT.jpg',
         date: 'date',
         title: 'IBM Blockchain',
-        content: `In September 2017, I began my first post-graduation job working for IBM Blockchain as a consutant
+        content: `In September 2017, I began my first post-graduation job working for IBM Blockchain as a consultant
          and software developer! Since joining I've had the opportunity to build blockchain applications across
-         multiple industries including supply chain, healthcare, finance, insurance, and govenment. I can't go into 
-         specifics, but we leverage <a href="https://www.hyperledger.org/projects/fabric">Hyperledger Fabric</a>, 
-         an open source private blockchain framework backed by the Linnux Foundation, 
+         multiple industries including supply chain, healthcare, finance, insurance, and government. I can't go into
+         specifics, but we leverage <a href="https://www.hyperledger.org/projects/fabric">Hyperledger Fabric</a>,
+         an open source private blockchain framework backed by the Linux Foundation,
          to build our networks.`
     },
     {
@@ -77,19 +78,19 @@ const posts = [
          we graduated from college, Adam took the reigns of the business and eventually sold it Roommie Rentals
          in the fall of 2018. Check out the <a href="tigerbedrentals.com">website for TBR</a>
          (which I assume is still operational) and a write up on Tiger Beds from
-         <a href="https://kellercenter.princeton.edu/elab/tiger-bed-rentals-llc">Princeton's entreprenourship hub</a>.`
+         <a href="https://kellercenter.princeton.edu/elab/tiger-bed-rentals-llc">Princeton's entrepreneurship hub</a>.`
     },
     {
         imgLocation: 'https://i.imgur.com/QgU91Gf.png',
         date: 'date',
         title: 'Impact: The Environmental Calculator Application',
         content: `In the fall of 2015, I completed my Princeton indepentent work in a seminar called "Applications for the Environment."
-         Over the course of the semester, I built an andriod application to track a user's environmental impact in terms of 
+         Over the course of the semester, I built an andriod application to track a user's environmental impact in terms of
          carbon footprint and water usage across five activities: food consumption, direct water use, trash production, energy use,
-         and transportation. The application included daily and weekly leaderboards based on location, and overall allowed users to 
-         comprehend their environmental impact and incentivize them to decrease it relative to those around them. After 
+         and transportation. The application included daily and weekly leaderboards based on location, and overall allowed users to
+         comprehend their environmental impact and incentivize them to decrease it relative to those around them. After
          completion of my application and adoption
-         from 20+ students on campus, I was awarded Princeton's 25 Under 25 Award given to the 25 students under the age of 25 with the 
+         from 20+ students on campus, I was awarded Princeton's 25 Under 25 Award given to the 25 students under the age of 25 with the
          most innovative independent projects. `
     }
 ];
