@@ -35,12 +35,10 @@ const posts = [
         imgLocation: 'https://i.imgur.com/lq6qpxT.jpg',
         date: 'date',
         title: 'IBM Blockchain Project: State Of Delaware',
-        content: `Since starting with IBM Blockchain a year ago, my the State of Delaware project is
-         the first one I can publicly discuss. 
+        content: `Since starting with IBM Blockchain a year ago, my project for the State of Delaware is
+         the first one I can publicly write about. 
          Thanks to the freedom of information act, you can read about the project
-         <a href="https://tinyurl.com/y7ogmqxs">here</a>. The project stems from an issue Dole (yes, the fruit company)
-         ran into when tracking down its
-         shareholders in a class action law suit a few years back (<a href="https://tinyurl.com/yamfptd9">NY Times Read</a>).
+         <a href="https://tinyurl.com/y7ogmqxs">here</a>.
          Over the past few months we've built a blockchain network for Delaware
          to track the authorization and issuance of stock between corporations, shareholders, law firms, and
          registered agents. Delware is looking to become the first blockchain-enabled state!`
@@ -49,8 +47,9 @@ const posts = [
         imgLocation: 'https://i.imgur.com/lq6qpxT.jpg',
         date: 'date',
         title: 'IBM Blockchain',
-        content: `In September 2017, I began my first full time job post-graduation working for IBM Blockchain as a consutant
-         and software developer! IBM decied in early 2017 to dedicate significant resources to building out it's blockchain capabilities.`
+        content: `In September 2017, I began my first post-graduation job working for IBM Blockchain as a consutant
+         and software developer! Since joining I've had the opportunity to build blockchain applications across
+         multiple industries including supply chain, healthcare, finance, insurance, and govenment.`
     },
     {
         imgLocation: 'https://i.imgur.com/qeGX1tj.jpg',
@@ -76,10 +75,17 @@ const posts = [
          <a href="https://kellercenter.princeton.edu/elab/tiger-bed-rentals-llc">Princeton's entreprenourship hub</a>.`
     },
     {
-        imgLocation: '../../assets/me.png',
+        imgLocation: 'https://i.imgur.com/QgU91Gf.png',
         date: 'date',
-        title: 'Other...',
-        content: `I'll think of some other great bits to throw in here... see you back soon!`
+        title: 'Impact: The Environmental Calculator Application',
+        content: `In the fall of 2015, I completed my Princeton indepentent work in a seminar called "Applications for the Environment."
+         Over the course of the semester, I built an andriod application to track a user's environmental impact in terms of 
+         carbon footprint and water usage across five activities: food consumption, direct water use, trash production, energy use,
+         and transportation. The application included daily and weekly leaderboards based on location, and overall allowed users to 
+         comprehend their environmental impact and incentivize them to decrease it relative to those around them. After 
+         completion of my application and adoption
+         from 20+ students on campus, I was awarded Princeton's 25 Under 25 Award given to the 25 students under the age of 25 with the 
+         most innovative independent projects. `
     }
 ];
 
