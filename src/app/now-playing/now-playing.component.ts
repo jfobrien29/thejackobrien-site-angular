@@ -31,7 +31,6 @@ export class NowPlayingComponent implements OnInit {
       setTimeout(() => { this.isLoading = false; }, 1000);
 
       this.interval = setInterval(() => {
-        console.log('Refresh Data');
         this.refreshData();
       }, 30000);
     });
