@@ -3,22 +3,22 @@ const posts = [
         imgLocation: '../../assets/me.png',
         date: 'date',
         title: 'Welcome to my "Blog"!',
-        content: `Well this isn't really a blog, it's more of a collection of events
+        content: `Ok this isn't really a blog, it's more of a collection of events
          and projects that I felt were worthwhile to share on the internet. Check it out and let me know what you think!`
     },
     {
         imgLocation: 'https://i.imgur.com/NNy5eBJ.gif',
         date: 'date',
-        title: 'Now Playing Page is Online!',
+        title: '"Now Playing" Tab Online!',
         content: `In anticipation of the 2018 New York Marathon, I wanted to create a fun app/project to
          share my experience with everyone, especially those who generously gave to LLS! I came up with the idea to share
          my music, and created a mini app using Spotify's developer APIs. Check it out now on the
          <a href="/#/nowPlaying">Now Playing</a> tab! When I'm using spotify, the app
          displays the song I am currently listening to and provides links to listen along.
-         For a small subset of songs you'll also see my thoughts, namely all songs on my
+         For a small group of songs you'll also see my thoughts, namely all songs on my
          <a href=https://open.spotify.com/user/12137830555/playlist/2JUf2gUEcVwxOue6vaASwa?si=fJzXY5RQRua6JmYtVmXZfQ>
          "GAL 26.2"</a> marathon playlist. Listen along! (Spoiler alert, the point of this page is to get more eyes on LLS
-         and potentially race more donations during the race!)`
+         and potentially raise more donations during the race!)`
     },
     {
         imgLocation: 'https://i.imgur.com/AeA81hc.png',
@@ -27,7 +27,7 @@ const posts = [
         content: `In November 2017, I watched the New York Marathon and loved it. The scale of the race is incredible
          and I've always toyed around with doing one to prove I could. 6 months, 300+ miles,
          and $35,000+ in fundraising later and I'm well on my way!
-         I started <em>Groovin Against Leukemia</em> back in March 2018 with a few friends, and since then
+         I started <em>Groovin Against Leukemia</em> back in May 2018 with a few friends, and since then
          we've crushed our training and raised more than we thought possible for the Leukemia Lymphoma Society.
          The whole process has been incredible, and I've been
          <a href="">documenting it all</a> if you want to read more or donate!!`
@@ -61,8 +61,8 @@ const posts = [
         imgLocation: 'https://i.imgur.com/qeGX1tj.jpg',
         date: 'date',
         title: 'Old Relly: School Bus Rennovation Project',
-        content: `I could write a whole blog on the Reller, and someday I will. I have detailed notes from every day of our
-         cross country road trip, loads of resources from our build, and hundreds of pictures (thousands if you include
+        content: `I could write a whole blog on my baby the Reller, and someday I will. I have detailed notes from every day of our
+         cross country road trip, loads of resources + links from our build, and hundreds of pictures (thousands if you include
             <a href="http://www.beargoldstein.com/">Bear Goldstien's Photos</a>).
          For now, you can check out select pictures and videos of our legendary
          bus on our <a href="https://www.instagram.com/oldrelly/">instagram page</a>.`
