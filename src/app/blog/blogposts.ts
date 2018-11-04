@@ -9,7 +9,7 @@ const posts = [
     {
         imgLocation: 'https://i.imgur.com/NNy5eBJ.gif',
         date: 'date',
-        title: '"Now Playing" Tab Online!',
+        title: '"Now Playing" Online!',
         content: `In anticipation of the 2018 New York Marathon, I wanted to create a fun app/project to
          share my experience with everyone, especially those who generously gave to LLS! I came up with the idea to share
          my music, and created a mini app using Spotify's developer APIs. Check it out now on the
@@ -18,7 +18,7 @@ const posts = [
          For a small group of songs you'll also see my thoughts, namely all songs on my
          <a href=https://open.spotify.com/user/12137830555/playlist/2JUf2gUEcVwxOue6vaASwa?si=fJzXY5RQRua6JmYtVmXZfQ>
          "GAL 26.2"</a> marathon playlist. Listen along! (Spoiler alert, the point of this page is to get more eyes on LLS
-         and potentially raise more donations during the race!)`
+         and potentially raise more LLS donations during the race!)`
     },
     {
         imgLocation: 'https://i.imgur.com/AeA81hc.png',
