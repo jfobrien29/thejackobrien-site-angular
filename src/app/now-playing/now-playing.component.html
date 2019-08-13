@@ -17,11 +17,6 @@
             <img class="album-art" src={{song.songAlbumImage}}>
           </div>
 
-          <div class="my-thoughts-container" *ngIf="song.hasThoughts">
-            <h4>My thoughts on this song: </h4>
-            <p>"{{song.review}}"</p>
-          </div>
-
           <div class="about-content">
             <p>Listen along to this song in your <a href={{song.externalLink}}>browser</a> or open it up 
               directly in <a [href]="song.spotifyUri">Spotify</a>!</p>
@@ -36,12 +31,12 @@
         <div>
           <div class="donation-box">
             <p>It's not too late to donate to the <b>Leukemia Lymphoma Society</b>.
-              <a href="https://donate.lls.org/tnt/donate?programGroupName=TNT&fundraiserPageID=3143860&participantFirstName=Jack&participantLastName=O%27Brien&displayName=Jack%20O%27Brien&fundraiserPageURL=https://pages.teamintraining.org/nyc/nyc18/TheJackOBrien">
+              <a href="https://pages.lls.org/tnt/nyc/nyc19/thejackobrien">
                 Click here to donate right now!</a>
             </p>
           </div>
           <div class="github-box">
-            <p>I wanted to create a way to share my music all the time, especially during the 2018 New York Marathon.
+            <p>I wanted to create a way to share my music all the time.
               Check out the original version of this page <a href="https://jacks-now-playing.herokuapp.com/">here</a>
               or view the code on <a href="https://github.com/jfobrien29/spotify-marathon-api">github</a>.
             </p>
