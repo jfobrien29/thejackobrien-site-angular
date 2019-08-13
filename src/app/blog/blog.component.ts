@@ -12,6 +12,7 @@ export class BlogComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    // TODO: Load posts from a database... this isn't sustainable
     this.posts = posts;
   }
 
